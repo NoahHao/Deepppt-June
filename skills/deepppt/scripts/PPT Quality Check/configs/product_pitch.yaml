@@ -1,0 +1,63 @@
+meta:
+  id: product_pitch
+  name: "产品推介（病·药·效·行动）"
+  description: "对外销售、方案宣讲"
+  version: "1.0"
+
+gate_policy:
+  strict_order: true
+  allow_skipped_stages: false
+  max_unmatched_pages: 2
+
+stages:
+  - id: context
+    label: "行业/客户现状"
+    role: context
+    keywords: [行业, 市场, 趋势, 现状, 规模, 格局, 客户背景, 业务现状]
+    synonyms: [态势, landscape, market, overview]
+    required: true
+    order: 1
+    min_pages: 1
+    max_pages: 2
+
+  - id: disease
+    label: "痛点/挑战"
+    role: complication
+    keywords: [痛点, 挑战, 问题, 困境, 瓶颈, 成本上升, 效率低, 风险, 压力, 缺口]
+    synonyms: [难点, 阻碍, complication, pain_point]
+    required: true
+    order: 2
+    min_pages: 1
+    max_pages: 2
+    must_precede: [context]
+
+  - id: medicine
+    label: "方案/产品"
+    role: answer
+    keywords: [方案, 产品, 能力, 平台, 架构, 功能, 特性, 如何解决, 我们的思路]
+    synonyms: [解决思路, 解法, solution, product, platform]
+    required: true
+    order: 3
+    min_pages: 1
+    max_pages: 3
+    must_precede: [disease]
+
+  - id: effect
+    label: "效果/案例"
+    role: evidence
+    keywords: [效果, 成果, ROI, 案例, 客户见证, 数据, 指标, 提升, 降低, benchmark]
+    synonyms: [成效, 佐证, proof, case_study, results]
+    required: true
+    order: 4
+    min_pages: 1
+    max_pages: 3
+
+  - id: action
+    label: "下一步/合作推进"
+    role: action
+    keywords: [下一步, 行动, 合作, 试点, 签约, 实施计划, 时间表, 联系人]
+    synonyms: [CTA, next_steps, pilot, rollout]
+    required: false
+    order: 5
+    min_pages: 0
+    max_pages: 1

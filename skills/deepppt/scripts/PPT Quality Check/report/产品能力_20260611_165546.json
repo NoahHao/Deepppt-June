@@ -1,0 +1,371 @@
+{
+  "file": "C:\\Deepppt\\knowledge_base\\product_intro\\产品能力.pptx",
+  "file_name": "产品能力.pptx",
+  "checks": {
+    "content_quality": {
+      "file": "C:/Deepppt/knowledge_base/product_intro/产品能力.pptx",
+      "total_pages": 8,
+      "summary": {
+        "total_pages": 8,
+        "total_issues": 17,
+        "error_count": 0,
+        "warning_count": 17,
+        "info_count": 0,
+        "critical_count": 10,
+        "passed": true,
+        "conclusion": "质量等级: 需人工复核  |  共 8 页  |  ERROR 0  CRITICAL 10  WARNING 17\n\n========================================\n[严重] 文本离群 10 处（内容与页面主题极不相关）:\n  - 第2页: \"低精计算、通算融合、投机微调，达成主流 LLM类模型 TPOT<10ms\"\n  - 第4页: \"* 路标支持\"\n  - 第4页: \"向量知识库 大库容多模向量检索\"\n  ... 已折叠 10 条\n\n========================================\n[警告] 建议关注:\n  类型-内容不匹配: 1 处\n    - 第8页: \n  结构不完整: 1 处\n    - 第?页: 缺少结尾页（致谢/Q&A）\n\n[参考] 轻度文本离群 5 处（偏离较轻，仅供参考）\n\n[提示] 以下页面健康分低于50，建议重点复核:\n  第8页 (分值 37, 问题: 文本离群, 类型-内容不匹配)",
+        "check_types": {
+          "C1_placeholder": false,
+          "C2_empty": false,
+          "C3_type_match": true,
+          "C4_redundancy": false,
+          "C5_continuity": false,
+          "C6_source_coverage": false,
+          "C7_encoding": false,
+          "C8_structure": true,
+          "C9_outlier": true
+        }
+      },
+      "collapsed_issues": {
+        "C9_OUTLIER": {
+          "count": 15,
+          "label": "文本离群",
+          "samples": [
+            {
+              "type": "C9_OUTLIER",
+              "text": "低精计算、通算融合、投机微调，达成主流 LLM类模型 TPOT<10ms",
+              "avg_similarity": 0.0,
+              "global_avg": 0.07,
+              "deviation_ratio": 0.0,
+              "tier": "critical",
+              "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.070, 偏离比 0.0%)",
+              "page": 2
+            },
+            {
+              "type": "C9_OUTLIER",
+              "text": "* 路标支持",
+              "avg_similarity": 0.0,
+              "global_avg": 0.037,
+              "deviation_ratio": 0.0,
+              "tier": "critical",
+              "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.037, 偏离比 0.0%)",
+              "page": 4
+            },
+            {
+              "type": "C9_OUTLIER",
+              "text": "向量知识库 大库容多模向量检索",
+              "avg_similarity": 0.0,
+              "global_avg": 0.037,
+              "deviation_ratio": 0.0,
+              "tier": "critical",
+              "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.037, 偏离比 0.0%)",
+              "page": 4
+            },
+            {
+              "type": "C9_OUTLIER",
+              "text": "OceanProtect",
+              "avg_similarity": 0.005,
+              "global_avg": 0.047,
+              "deviation_ratio": 0.096,
+              "tier": "warning",
+              "detail": "文本块与同页其他内容不相关 (相似度 0.005 vs 全局 0.047, 偏离比 9.6%)",
+              "page": 5
+            },
+            {
+              "type": "C9_OUTLIER",
+              "text": "Secure Snapshot",
+              "avg_similarity": 0.0,
+              "global_avg": 0.047,
+              "deviation_ratio": 0.0,
+              "tier": "critical",
+              "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.047, 偏离比 0.0%)",
+              "page": 5
+            }
+          ],
+          "collapsed": true,
+          "hint": null
+        },
+        "C3_CONTENT_MATCH": {
+          "count": 1,
+          "label": "类型-内容不匹配",
+          "samples": [
+            {
+              "type": "C3_CONTENT_MATCH",
+              "role": "结尾",
+              "issue": "结尾页未检测到致谢/Q&A等典型结尾信息",
+              "page": 8
+            }
+          ],
+          "collapsed": false,
+          "hint": null
+        },
+        "C8_STRUCTURE": {
+          "count": 1,
+          "label": "结构不完整",
+          "samples": [
+            {
+              "type": "C8_STRUCTURE",
+              "has_cover": true,
+              "has_closing": false,
+              "issues": [
+                "缺少结尾页（致谢/Q&A）"
+              ],
+              "detail": "缺少结尾页（致谢/Q&A）"
+            }
+          ],
+          "collapsed": false,
+          "hint": null
+        }
+      },
+      "page_scorecard": [
+        {
+          "page": 1,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 2,
+          "score": 85,
+          "errors": 0,
+          "critical": 1,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 3,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 4,
+          "score": 70,
+          "errors": 0,
+          "critical": 2,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 5,
+          "score": 82,
+          "errors": 0,
+          "critical": 1,
+          "warnings": 1,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 6,
+          "score": 94,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 2,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 7,
+          "score": 64,
+          "errors": 0,
+          "critical": 2,
+          "warnings": 2,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 8,
+          "score": 37,
+          "errors": 0,
+          "critical": 4,
+          "warnings": 1,
+          "top_issues": [
+            "文本离群",
+            "类型-内容不匹配"
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "type": "C9_OUTLIER",
+          "text": "低精计算、通算融合、投机微调，达成主流 LLM类模型 TPOT<10ms",
+          "avg_similarity": 0.0,
+          "global_avg": 0.07,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.070, 偏离比 0.0%)",
+          "page": 2
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "* 路标支持",
+          "avg_similarity": 0.0,
+          "global_avg": 0.037,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.037, 偏离比 0.0%)",
+          "page": 4
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "向量知识库 大库容多模向量检索",
+          "avg_similarity": 0.0,
+          "global_avg": 0.037,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.037, 偏离比 0.0%)",
+          "page": 4
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "OceanProtect",
+          "avg_similarity": 0.005,
+          "global_avg": 0.047,
+          "deviation_ratio": 0.096,
+          "tier": "warning",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.005 vs 全局 0.047, 偏离比 9.6%)",
+          "page": 5
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "Secure Snapshot",
+          "avg_similarity": 0.0,
+          "global_avg": 0.047,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.047, 偏离比 0.0%)",
+          "page": 5
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "秒级恢复能力",
+          "avg_similarity": 0.008,
+          "global_avg": 0.062,
+          "deviation_ratio": 0.1293,
+          "tier": "warning",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.008 vs 全局 0.062, 偏离比 12.9%)",
+          "page": 6
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "存储设备（主存）",
+          "avg_similarity": 0.008,
+          "global_avg": 0.062,
+          "deviation_ratio": 0.1293,
+          "tier": "warning",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.008 vs 全局 0.062, 偏离比 12.9%)",
+          "page": 6
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "其他……",
+          "avg_similarity": 0.0,
+          "global_avg": 0.041,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.041, 偏离比 0.0%)",
+          "page": 7
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "智能切片    |    检索增强    |    安全护栏    |    分权分域",
+          "avg_similarity": 0.005,
+          "global_avg": 0.041,
+          "deviation_ratio": 0.1189,
+          "tier": "warning",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.005 vs 全局 0.041, 偏离比 11.9%)",
+          "page": 7
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "检索 准确率",
+          "avg_similarity": 0.004,
+          "global_avg": 0.041,
+          "deviation_ratio": 0.1073,
+          "tier": "warning",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.004 vs 全局 0.041, 偏离比 10.7%)",
+          "page": 7
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "TOP N 召回率",
+          "avg_similarity": 0.0,
+          "global_avg": 0.041,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.041, 偏离比 0.0%)",
+          "page": 7
+        },
+        {
+          "type": "C3_CONTENT_MATCH",
+          "role": "结尾",
+          "issue": "结尾页未检测到致谢/Q&A等典型结尾信息",
+          "page": 8
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "iBMC",
+          "avg_similarity": 0.0,
+          "global_avg": 0.021,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.021, 偏离比 0.0%)",
+          "page": 8
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "CC-Agent",
+          "avg_similarity": 0.0,
+          "global_avg": 0.021,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.021, 偏离比 0.0%)",
+          "page": 8
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "* CCAE：Cluster Computing Autonomous Engine",
+          "avg_similarity": 0.002,
+          "global_avg": 0.021,
+          "deviation_ratio": 0.0974,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.002 vs 全局 0.021, 偏离比 9.7%)",
+          "page": 8
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "单机/双机/大EP",
+          "avg_similarity": 0.0,
+          "global_avg": 0.021,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.021, 偏离比 0.0%)",
+          "page": 8
+        },
+        {
+          "type": "C8_STRUCTURE",
+          "has_cover": true,
+          "has_closing": false,
+          "issues": [
+            "缺少结尾页（致谢/Q&A）"
+          ],
+          "detail": "缺少结尾页（致谢/Q&A）"
+        }
+      ],
+      "conclusion": "质量等级: 需人工复核  |  共 8 页  |  ERROR 0  CRITICAL 10  WARNING 17\n\n========================================\n[严重] 文本离群 10 处（内容与页面主题极不相关）:\n  - 第2页: \"低精计算、通算融合、投机微调，达成主流 LLM类模型 TPOT<10ms\"\n  - 第4页: \"* 路标支持\"\n  - 第4页: \"向量知识库 大库容多模向量检索\"\n  ... 已折叠 10 条\n\n========================================\n[警告] 建议关注:\n  类型-内容不匹配: 1 处\n    - 第8页: \n  结构不完整: 1 处\n    - 第?页: 缺少结尾页（致谢/Q&A）\n\n[参考] 轻度文本离群 5 处（偏离较轻，仅供参考）\n\n[提示] 以下页面健康分低于50，建议重点复核:\n  第8页 (分值 37, 问题: 文本离群, 类型-内容不匹配)"
+    }
+  },
+  "conclusion": "质量等级: 需人工复核  |  共 8 页  |  ERROR 0  CRITICAL 10  WARNING 17\n\n========================================\n[严重] 文本离群 10 处（内容与页面主题极不相关）:\n  - 第2页: \"低精计算、通算融合、投机微调，达成主流 LLM类模型 TPOT<10ms\"\n  - 第4页: \"* 路标支持\"\n  - 第4页: \"向量知识库 大库容多模向量检索\"\n  ... 已折叠 10 条\n\n========================================\n[警告] 建议关注:\n  类型-内容不匹配: 1 处\n    - 第8页: \n  结构不完整: 1 处\n    - 第?页: 缺少结尾页（致谢/Q&A）\n\n[参考] 轻度文本离群 5 处（偏离较轻，仅供参考）\n\n[提示] 以下页面健康分低于50，建议重点复核:\n  第8页 (分值 37, 问题: 文本离群, 类型-内容不匹配)",
+  "overall_passed": true
+}

@@ -1,0 +1,44 @@
+meta:
+  id: biz_review_meeting
+  name: "月度/季度经营例会材料"
+  description: "适用：内部例会、BU review。允许灵活顺序，但必须覆盖：实绩→偏差信号→TOP3问题→行动项"
+  source: "corporate-storyline"
+  version: "1.0"
+
+gate_policy:
+  strict_order: false          # ← 例会材料允许灵活排布
+  allow_skipped_stages: false
+  max_unmatched_pages: 5
+
+stages:
+  - id: dashboard
+    label: "仪表盘 / 核心KPI实绩"
+    role: context
+    keywords: [仪表盘, KPI, 实绩, 完成率, 收入, 利润, 出货量, 达标]
+    required: true
+    min_pages: 1
+    max_pages: 2
+
+  - id: variance_signal
+    label: "红绿灯 / 偏差 / 预警信号"
+    role: complication
+    keywords: [红绿灯, 偏差, 预警, 下滑, 未达标, 缺口, 异常, 关注项]
+    required: true
+    min_pages: 1
+    max_pages: 2
+
+  - id: top_issues
+    label: "TOP问题深挖（2-3个，带根因）"
+    role: evidence
+    keywords: [问题, 根因, 分析, 为什么, 驱动, 拆解, 主要]
+    required: true
+    min_pages: 1
+    max_pages: 4
+
+  - id: action_items
+    label: "行动项（owner + due date + 验收）"
+    role: action
+    keywords: [行动项, owner, 负责人, 到期, 验收, 跟进, 下一步]
+    required: true
+    min_pages: 1
+    max_pages: 2

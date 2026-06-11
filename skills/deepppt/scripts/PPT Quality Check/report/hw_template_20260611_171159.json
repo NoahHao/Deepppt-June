@@ -1,0 +1,4834 @@
+{
+  "file": "C:\\备份\\kb_search\\hw_template.pptx",
+  "file_name": "hw_template.pptx",
+  "checks": {
+    "content_quality": {
+      "file": "C:/备份/kb_search/hw_template.pptx",
+      "total_pages": 149,
+      "summary": {
+        "total_pages": 149,
+        "total_issues": 222,
+        "error_count": 1,
+        "warning_count": 221,
+        "info_count": 0,
+        "critical_count": 191,
+        "passed": false,
+        "conclusion": "质量等级: 需修复  |  共 149 页  |  ERROR 1  CRITICAL 191  WARNING 221\n\n========================================\n[阻断] 以下问题必须修复:\n  空页: 1 处\n    - 第149页: 页面几乎无实质内容\n\n========================================\n[严重] 文本离群 191 处（内容与页面主题极不相关）:\n  - 第1页: \"内容框架\"\n  - 第1页: \"正式使用时请删除此页\"\n  - 第5页: \"单位：元人民币\"\n  ... 已折叠 212 条\n  >>> 同类问题出现 217 次，建议检查 文本离群 的检测阈值是否合理\n\n========================================\n[警告] 建议关注:\n  内容冗余: 2 处\n    - 第?页: 页码 35 和 36 内容高度相似 (sim=0.76)\n    - 第?页: 页码 54 和 55 内容高度相似 (sim=0.94)\n  类型-内容不匹配: 1 处\n    - 第149页: \n  结构不完整: 1 处\n    - 第?页: 缺少结尾页（致谢/Q&A）\n\n[参考] 轻度文本离群 26 处（偏离较轻，仅供参考）\n\n[提示] 以下页面健康分低于50，建议重点复核:\n  第7页 (分值 25, 问题: 文本离群)\n  第9页 (分值 0, 问题: 文本离群)\n  第20页 (分值 10, 问题: 文本离群)\n  第28页 (分值 19, 问题: 文本离群)\n  第31页 (分值 40, 问题: 文本离群)",
+        "check_types": {
+          "C1_placeholder": false,
+          "C2_empty": true,
+          "C3_type_match": true,
+          "C4_redundancy": true,
+          "C5_continuity": false,
+          "C6_source_coverage": false,
+          "C7_encoding": false,
+          "C8_structure": true,
+          "C9_outlier": true
+        }
+      },
+      "collapsed_issues": {
+        "C9_OUTLIER": {
+          "count": 217,
+          "label": "文本离群",
+          "samples": [
+            {
+              "type": "C9_OUTLIER",
+              "text": "内容框架",
+              "avg_similarity": 0.0,
+              "global_avg": 0.058,
+              "deviation_ratio": 0.0,
+              "tier": "critical",
+              "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.058, 偏离比 0.0%)",
+              "page": 1
+            },
+            {
+              "type": "C9_OUTLIER",
+              "text": "正式使用时请删除此页",
+              "avg_similarity": 0.0,
+              "global_avg": 0.058,
+              "deviation_ratio": 0.0,
+              "tier": "critical",
+              "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.058, 偏离比 0.0%)",
+              "page": 1
+            },
+            {
+              "type": "C9_OUTLIER",
+              "text": "单位：元人民币",
+              "avg_similarity": 0.0,
+              "global_avg": 0.03,
+              "deviation_ratio": 0.0,
+              "tier": "critical",
+              "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.030, 偏离比 0.0%)",
+              "page": 5
+            },
+            {
+              "type": "C9_OUTLIER",
+              "text": "14万+",
+              "avg_similarity": 0.0,
+              "global_avg": 0.03,
+              "deviation_ratio": 0.0,
+              "tier": "critical",
+              "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.030, 偏离比 0.0%)",
+              "page": 5
+            },
+            {
+              "type": "C9_OUTLIER",
+              "text": "200+",
+              "avg_similarity": 0.0,
+              "global_avg": 0.03,
+              "deviation_ratio": 0.0,
+              "tier": "critical",
+              "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.030, 偏离比 0.0%)",
+              "page": 5
+            }
+          ],
+          "collapsed": true,
+          "hint": "同类问题出现 217 次，建议检查 文本离群 的检测阈值是否合理"
+        },
+        "C2_EMPTY_PAGE": {
+          "count": 1,
+          "label": "空页",
+          "samples": [
+            {
+              "type": "C2_EMPTY_PAGE",
+              "char_count": 0,
+              "detail": "页面几乎无实质内容",
+              "page": 149
+            }
+          ],
+          "collapsed": false,
+          "hint": null
+        },
+        "C3_CONTENT_MATCH": {
+          "count": 1,
+          "label": "类型-内容不匹配",
+          "samples": [
+            {
+              "type": "C3_CONTENT_MATCH",
+              "role": "结尾",
+              "issue": "结尾页未检测到致谢/Q&A等典型结尾信息",
+              "page": 149
+            }
+          ],
+          "collapsed": false,
+          "hint": null
+        },
+        "C4_REDUNDANCY": {
+          "count": 2,
+          "label": "内容冗余",
+          "samples": [
+            {
+              "type": "C4_REDUNDANCY",
+              "page1": 35,
+              "page2": 36,
+              "similarity": 0.759,
+              "detail": "页码 35 和 36 内容高度相似 (sim=0.76)"
+            },
+            {
+              "type": "C4_REDUNDANCY",
+              "page1": 54,
+              "page2": 55,
+              "similarity": 0.941,
+              "detail": "页码 54 和 55 内容高度相似 (sim=0.94)"
+            }
+          ],
+          "collapsed": false,
+          "hint": null
+        },
+        "C8_STRUCTURE": {
+          "count": 1,
+          "label": "结构不完整",
+          "samples": [
+            {
+              "type": "C8_STRUCTURE",
+              "has_cover": true,
+              "has_closing": false,
+              "issues": [
+                "缺少结尾页（致谢/Q&A）"
+              ],
+              "detail": "缺少结尾页（致谢/Q&A）"
+            }
+          ],
+          "collapsed": false,
+          "hint": null
+        }
+      },
+      "page_scorecard": [
+        {
+          "page": 1,
+          "score": 70,
+          "errors": 0,
+          "critical": 2,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 2,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 3,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 4,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 5,
+          "score": 55,
+          "errors": 0,
+          "critical": 3,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 6,
+          "score": 55,
+          "errors": 0,
+          "critical": 3,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 7,
+          "score": 25,
+          "errors": 0,
+          "critical": 5,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 8,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 9,
+          "score": 0,
+          "errors": 0,
+          "critical": 8,
+          "warnings": 1,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 10,
+          "score": 64,
+          "errors": 0,
+          "critical": 2,
+          "warnings": 2,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 11,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 12,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 13,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 14,
+          "score": 70,
+          "errors": 0,
+          "critical": 2,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 15,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 16,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 17,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 18,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 19,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 20,
+          "score": 10,
+          "errors": 0,
+          "critical": 6,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 21,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 22,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 23,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 24,
+          "score": 85,
+          "errors": 0,
+          "critical": 1,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 25,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 26,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 27,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 28,
+          "score": 19,
+          "errors": 0,
+          "critical": 5,
+          "warnings": 2,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 29,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 30,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 31,
+          "score": 40,
+          "errors": 0,
+          "critical": 4,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 32,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 33,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 34,
+          "score": 85,
+          "errors": 0,
+          "critical": 1,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 35,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 36,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 37,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 38,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 39,
+          "score": 25,
+          "errors": 0,
+          "critical": 5,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 40,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 41,
+          "score": 55,
+          "errors": 0,
+          "critical": 3,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 42,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 43,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 44,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 45,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 46,
+          "score": 40,
+          "errors": 0,
+          "critical": 4,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 47,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 48,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 49,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 50,
+          "score": 82,
+          "errors": 0,
+          "critical": 1,
+          "warnings": 1,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 51,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 52,
+          "score": 67,
+          "errors": 0,
+          "critical": 2,
+          "warnings": 1,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 53,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 54,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 55,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 56,
+          "score": 10,
+          "errors": 0,
+          "critical": 6,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 57,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 58,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 59,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 60,
+          "score": 70,
+          "errors": 0,
+          "critical": 2,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 61,
+          "score": 70,
+          "errors": 0,
+          "critical": 2,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 62,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 63,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 64,
+          "score": 70,
+          "errors": 0,
+          "critical": 2,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 65,
+          "score": 82,
+          "errors": 0,
+          "critical": 1,
+          "warnings": 1,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 66,
+          "score": 70,
+          "errors": 0,
+          "critical": 2,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 67,
+          "score": 25,
+          "errors": 0,
+          "critical": 5,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 68,
+          "score": 25,
+          "errors": 0,
+          "critical": 5,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 69,
+          "score": 55,
+          "errors": 0,
+          "critical": 3,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 70,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 71,
+          "score": 37,
+          "errors": 0,
+          "critical": 4,
+          "warnings": 1,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 72,
+          "score": 0,
+          "errors": 0,
+          "critical": 9,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 73,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 74,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 75,
+          "score": 85,
+          "errors": 0,
+          "critical": 1,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 76,
+          "score": 55,
+          "errors": 0,
+          "critical": 3,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 77,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 78,
+          "score": 85,
+          "errors": 0,
+          "critical": 1,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 79,
+          "score": 82,
+          "errors": 0,
+          "critical": 1,
+          "warnings": 1,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 80,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 81,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 82,
+          "score": 97,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 1,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 83,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 84,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 85,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 86,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 87,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 88,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 89,
+          "score": 70,
+          "errors": 0,
+          "critical": 2,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 90,
+          "score": 52,
+          "errors": 0,
+          "critical": 3,
+          "warnings": 1,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 91,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 92,
+          "score": 70,
+          "errors": 0,
+          "critical": 2,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 93,
+          "score": 25,
+          "errors": 0,
+          "critical": 5,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 94,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 95,
+          "score": 97,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 1,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 96,
+          "score": 85,
+          "errors": 0,
+          "critical": 1,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 97,
+          "score": 40,
+          "errors": 0,
+          "critical": 4,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 98,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 99,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 100,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 101,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 102,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 103,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 104,
+          "score": 22,
+          "errors": 0,
+          "critical": 5,
+          "warnings": 1,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 105,
+          "score": 40,
+          "errors": 0,
+          "critical": 4,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 106,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 107,
+          "score": 70,
+          "errors": 0,
+          "critical": 2,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 108,
+          "score": 0,
+          "errors": 0,
+          "critical": 8,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 109,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 110,
+          "score": 37,
+          "errors": 0,
+          "critical": 4,
+          "warnings": 1,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 111,
+          "score": 85,
+          "errors": 0,
+          "critical": 1,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 112,
+          "score": 16,
+          "errors": 0,
+          "critical": 4,
+          "warnings": 8,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 113,
+          "score": 25,
+          "errors": 0,
+          "critical": 5,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 114,
+          "score": 70,
+          "errors": 0,
+          "critical": 2,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 115,
+          "score": 37,
+          "errors": 0,
+          "critical": 4,
+          "warnings": 1,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 116,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 117,
+          "score": 34,
+          "errors": 0,
+          "critical": 4,
+          "warnings": 2,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 118,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 119,
+          "score": 55,
+          "errors": 0,
+          "critical": 3,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 120,
+          "score": 55,
+          "errors": 0,
+          "critical": 3,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 121,
+          "score": 85,
+          "errors": 0,
+          "critical": 1,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 122,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 123,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 124,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 125,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 126,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 127,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 128,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 129,
+          "score": 0,
+          "errors": 0,
+          "critical": 7,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 130,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 131,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 132,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 133,
+          "score": 40,
+          "errors": 0,
+          "critical": 4,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 134,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 135,
+          "score": 85,
+          "errors": 0,
+          "critical": 1,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 136,
+          "score": 55,
+          "errors": 0,
+          "critical": 3,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 137,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 138,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 139,
+          "score": 70,
+          "errors": 0,
+          "critical": 2,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 140,
+          "score": 85,
+          "errors": 0,
+          "critical": 1,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 141,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 142,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 143,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 144,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 145,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 146,
+          "score": 85,
+          "errors": 0,
+          "critical": 1,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 147,
+          "score": 100,
+          "errors": 0,
+          "critical": 0,
+          "warnings": 0,
+          "top_issues": []
+        },
+        {
+          "page": 148,
+          "score": 85,
+          "errors": 0,
+          "critical": 1,
+          "warnings": 0,
+          "top_issues": [
+            "文本离群"
+          ]
+        },
+        {
+          "page": 149,
+          "score": 67,
+          "errors": 1,
+          "critical": 0,
+          "warnings": 1,
+          "top_issues": [
+            "空页",
+            "类型-内容不匹配"
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "type": "C9_OUTLIER",
+          "text": "内容框架",
+          "avg_similarity": 0.0,
+          "global_avg": 0.058,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.058, 偏离比 0.0%)",
+          "page": 1
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "正式使用时请删除此页",
+          "avg_similarity": 0.0,
+          "global_avg": 0.058,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.058, 偏离比 0.0%)",
+          "page": 1
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "单位：元人民币",
+          "avg_similarity": 0.0,
+          "global_avg": 0.03,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.030, 偏离比 0.0%)",
+          "page": 5
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "14万+",
+          "avg_similarity": 0.0,
+          "global_avg": 0.03,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.030, 偏离比 0.0%)",
+          "page": 5
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "200+",
+          "avg_similarity": 0.0,
+          "global_avg": 0.03,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.030, 偏离比 0.0%)",
+          "page": 5
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "700+ 智慧城市",
+          "avg_similarity": 0.0,
+          "global_avg": 0.031,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.031, 偏离比 0.0%)",
+          "page": 6
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "130+ 机场、航司",
+          "avg_similarity": 0.0,
+          "global_avg": 0.031,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.031, 偏离比 0.0%)",
+          "page": 6
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "280+ 华为坤灵分销产品",
+          "avg_similarity": 0.003,
+          "global_avg": 0.031,
+          "deviation_ratio": 0.0875,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.003 vs 全局 0.031, 偏离比 8.7%)",
+          "page": 6
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "220万+",
+          "avg_similarity": 0.0,
+          "global_avg": 0.022,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.022, 偏离比 0.0%)",
+          "page": 7
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "23万+",
+          "avg_similarity": 0.0,
+          "global_avg": 0.022,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.022, 偏离比 0.0%)",
+          "page": 7
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "7,000+",
+          "avg_similarity": 0.0,
+          "global_avg": 0.022,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.022, 偏离比 0.0%)",
+          "page": 7
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "2,500+",
+          "avg_similarity": 0.0,
+          "global_avg": 0.022,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.022, 偏离比 0.0%)",
+          "page": 7
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "华为设备搭载HarmonyOS",
+          "avg_similarity": 0.0,
+          "global_avg": 0.022,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.022, 偏离比 0.0%)",
+          "page": 7
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "为可持续发展贡献力量",
+          "avg_similarity": 0.0,
+          "global_avg": 0.027,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.027, 偏离比 0.0%)",
+          "page": 9
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "减少碳排放",
+          "avg_similarity": 0.0,
+          "global_avg": 0.027,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.027, 偏离比 0.0%)",
+          "page": 9
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "4.95 亿吨",
+          "avg_similarity": 0.0,
+          "global_avg": 0.027,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.027, 偏离比 0.0%)",
+          "page": 9
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "相当于植树",
+          "avg_similarity": 0.0,
+          "global_avg": 0.027,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.027, 偏离比 0.0%)",
+          "page": 9
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "6.8 亿棵",
+          "avg_similarity": 0.003,
+          "global_avg": 0.027,
+          "deviation_ratio": 0.1283,
+          "tier": "warning",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.003 vs 全局 0.027, 偏离比 12.8%)",
+          "page": 9
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "绿色发电",
+          "avg_similarity": 0.003,
+          "global_avg": 0.027,
+          "deviation_ratio": 0.0994,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.003 vs 全局 0.027, 偏离比 9.9%)",
+          "page": 9
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "“一秒一公里”【*】全液冷超充 已在50+城市、20+条高速沿线部署",
+          "avg_similarity": 0.001,
+          "global_avg": 0.027,
+          "deviation_ratio": 0.05,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.001 vs 全局 0.027, 偏离比 5.0%)",
+          "page": 9
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "DriveONE动力域解决方案 10+家车企，50+款车型",
+          "avg_similarity": 0.001,
+          "global_avg": 0.027,
+          "deviation_ratio": 0.05,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.001 vs 全局 0.027, 偏离比 5.0%)",
+          "page": 9
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "136%",
+          "avg_similarity": 0.0,
+          "global_avg": 0.027,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.027, 偏离比 0.0%)",
+          "page": 9
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "生态合作伙伴",
+          "avg_similarity": 0.004,
+          "global_avg": 0.038,
+          "deviation_ratio": 0.1177,
+          "tier": "warning",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.004 vs 全局 0.038, 偏离比 11.8%)",
+          "page": 10
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "AutoLab 第七届金焰奖",
+          "avg_similarity": 0.0,
+          "global_avg": 0.038,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.038, 偏离比 0.0%)",
+          "page": 10
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "自动紧急制动 （AEB）特等奖",
+          "avg_similarity": 0.0,
+          "global_avg": 0.038,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.038, 偏离比 0.0%)",
+          "page": 10
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "聚焦ICT技术，帮助车企造好车",
+          "avg_similarity": 0.004,
+          "global_avg": 0.038,
+          "deviation_ratio": 0.1042,
+          "tier": "warning",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.004 vs 全局 0.038, 偏离比 10.4%)",
+          "page": 10
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "10倍 撬动效应",
+          "avg_similarity": 0.0,
+          "global_avg": 0.044,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.044, 偏离比 0.0%)",
+          "page": 14
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": " 45%",
+          "avg_similarity": 0.0,
+          "global_avg": 0.044,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.044, 偏离比 0.0%)",
+          "page": 14
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "2022",
+          "avg_similarity": 0.0,
+          "global_avg": 0.045,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.045, 偏离比 0.0%)",
+          "page": 20
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "2024",
+          "avg_similarity": 0.0,
+          "global_avg": 0.045,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.045, 偏离比 0.0%)",
+          "page": 20
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "2026",
+          "avg_similarity": 0.0,
+          "global_avg": 0.045,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.045, 偏离比 0.0%)",
+          "page": 20
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "1 YB",
+          "avg_similarity": 0.0,
+          "global_avg": 0.045,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.045, 偏离比 0.0%)",
+          "page": 20
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "44 ZB",
+          "avg_similarity": 0.0,
+          "global_avg": 0.045,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.045, 偏离比 0.0%)",
+          "page": 20
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "2028",
+          "avg_similarity": 0.0,
+          "global_avg": 0.045,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.045, 偏离比 0.0%)",
+          "page": 20
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "用电模式互动化",
+          "avg_similarity": 0.0,
+          "global_avg": 0.034,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.034, 偏离比 0.0%)",
+          "page": 24
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "接入覆盖  提速&用户体验  专线+X",
+          "avg_similarity": 0.003,
+          "global_avg": 0.046,
+          "deviation_ratio": 0.0736,
+          "tier": "warning",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.003 vs 全局 0.046, 偏离比 7.4%)",
+          "page": 28
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "中资出海",
+          "avg_similarity": 0.0,
+          "global_avg": 0.046,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.046, 偏离比 0.0%)",
+          "page": 28
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "2H&2B",
+          "avg_similarity": 0.0,
+          "global_avg": 0.046,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.046, 偏离比 0.0%)",
+          "page": 28
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "XtoB",
+          "avg_similarity": 0.0,
+          "global_avg": 0.046,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.046, 偏离比 0.0%)",
+          "page": 28
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "强存储弱计算  存算并重",
+          "avg_similarity": 0.0,
+          "global_avg": 0.046,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.046, 偏离比 0.0%)",
+          "page": 28
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "多模态融合",
+          "avg_similarity": 0.0,
+          "global_avg": 0.046,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.046, 偏离比 0.0%)",
+          "page": 28
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "接入带宽Mbps  Gbps",
+          "avg_similarity": 0.003,
+          "global_avg": 0.046,
+          "deviation_ratio": 0.0736,
+          "tier": "warning",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.003 vs 全局 0.046, 偏离比 7.4%)",
+          "page": 28
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "2K~16K 多视角",
+          "avg_similarity": 0.0,
+          "global_avg": 0.02,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.020, 偏离比 0.0%)",
+          "page": 31
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "2023 20+",
+          "avg_similarity": 0.0,
+          "global_avg": 0.02,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.020, 偏离比 0.0%)",
+          "page": 31
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "2024 40+",
+          "avg_similarity": 0.0,
+          "global_avg": 0.02,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.020, 偏离比 0.0%)",
+          "page": 31
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "2025 100+",
+          "avg_similarity": 0.0,
+          "global_avg": 0.02,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.020, 偏离比 0.0%)",
+          "page": 31
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "千行万业",
+          "avg_similarity": 0.0,
+          "global_avg": 0.036,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.036, 偏离比 0.0%)",
+          "page": 34
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "改善基础设施体验",
+          "avg_similarity": 0.002,
+          "global_avg": 0.026,
+          "deviation_ratio": 0.0905,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.002 vs 全局 0.026, 偏离比 9.0%)",
+          "page": 39
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "极简架构",
+          "avg_similarity": 0.0,
+          "global_avg": 0.026,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.026, 偏离比 0.0%)",
+          "page": 39
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "边云协同",
+          "avg_similarity": 0.0,
+          "global_avg": 0.026,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.026, 偏离比 0.0%)",
+          "page": 39
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "边缘计算节点",
+          "avg_similarity": 0.0,
+          "global_avg": 0.026,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.026, 偏离比 0.0%)",
+          "page": 39
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "全光网络",
+          "avg_similarity": 0.0,
+          "global_avg": 0.026,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.026, 偏离比 0.0%)",
+          "page": 39
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "16,00067,000/秒",
+          "avg_similarity": 0.0,
+          "global_avg": 0.022,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.022, 偏离比 0.0%)",
+          "page": 41
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "高性能存算网",
+          "avg_similarity": 0.0,
+          "global_avg": 0.022,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.022, 偏离比 0.0%)",
+          "page": 41
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "分式 Cache",
+          "avg_similarity": 0.0,
+          "global_avg": 0.022,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.022, 偏离比 0.0%)",
+          "page": 41
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "算法、数据、应用",
+          "avg_similarity": 0.003,
+          "global_avg": 0.02,
+          "deviation_ratio": 0.1263,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.003 vs 全局 0.020, 偏离比 12.6%)",
+          "page": 46
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "AI使能",
+          "avg_similarity": 0.0,
+          "global_avg": 0.02,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.020, 偏离比 0.0%)",
+          "page": 46
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "云侧训练/算法仓、边侧推理",
+          "avg_similarity": 0.003,
+          "global_avg": 0.02,
+          "deviation_ratio": 0.1263,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.003 vs 全局 0.020, 偏离比 12.6%)",
+          "page": 46
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "7天交付，面积省50%",
+          "avg_similarity": 0.0,
+          "global_avg": 0.02,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.020, 偏离比 0.0%)",
+          "page": 46
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "L0：基础引擎",
+          "avg_similarity": 0.0,
+          "global_avg": 0.03,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.030, 偏离比 0.0%)",
+          "page": 50
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "保安全保生产",
+          "avg_similarity": 0.004,
+          "global_avg": 0.03,
+          "deviation_ratio": 0.1469,
+          "tier": "warning",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.004 vs 全局 0.030, 偏离比 14.7%)",
+          "page": 50
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "政策牵引",
+          "avg_similarity": 0.0,
+          "global_avg": 0.028,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.028, 偏离比 0.0%)",
+          "page": 52
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "自主销售 自主交付 秩序管理",
+          "avg_similarity": 0.004,
+          "global_avg": 0.028,
+          "deviation_ratio": 0.1294,
+          "tier": "warning",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.004 vs 全局 0.028, 偏离比 12.9%)",
+          "page": 52
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "资源投入",
+          "avg_similarity": 0.0,
+          "global_avg": 0.028,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.028, 偏离比 0.0%)",
+          "page": 52
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "辅助运营",
+          "avg_similarity": 0.0,
+          "global_avg": 0.027,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.027, 偏离比 0.0%)",
+          "page": 56
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "开放的赋能体系",
+          "avg_similarity": 0.0,
+          "global_avg": 0.027,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.027, 偏离比 0.0%)",
+          "page": 56
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "规划设计",
+          "avg_similarity": 0.0,
+          "global_avg": 0.027,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.027, 偏离比 0.0%)",
+          "page": 56
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "软件业务",
+          "avg_similarity": 0.0,
+          "global_avg": 0.027,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.027, 偏离比 0.0%)",
+          "page": 56
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "绿色集成",
+          "avg_similarity": 0.0,
+          "global_avg": 0.027,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.027, 偏离比 0.0%)",
+          "page": 56
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "优化体验",
+          "avg_similarity": 0.0,
+          "global_avg": 0.027,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.027, 偏离比 0.0%)",
+          "page": 56
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "150+ 产学合作项目",
+          "avg_similarity": 0.0,
+          "global_avg": 0.04,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.040, 偏离比 0.0%)",
+          "page": 60
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "* 数据截至2023年底",
+          "avg_similarity": 0.0,
+          "global_avg": 0.04,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.040, 偏离比 0.0%)",
+          "page": 60
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "2022",
+          "avg_similarity": 0.0,
+          "global_avg": 0.027,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.027, 偏离比 0.0%)",
+          "page": 61
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "4,800+",
+          "avg_similarity": 0.0,
+          "global_avg": 0.027,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.027, 偏离比 0.0%)",
+          "page": 61
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "云核 心网",
+          "avg_similarity": 0.0,
+          "global_avg": 0.022,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.022, 偏离比 0.0%)",
+          "page": 64
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "提供产品组合解决方案",
+          "avg_similarity": 0.0,
+          "global_avg": 0.022,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.022, 偏离比 0.0%)",
+          "page": 64
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "GlobalData：连续5年被评领导者",
+          "avg_similarity": 0.006,
+          "global_avg": 0.058,
+          "deviation_ratio": 0.0964,
+          "tier": "warning",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.006 vs 全局 0.058, 偏离比 9.6%)",
+          "page": 65
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "2024巴展斩获7项重量级大奖",
+          "avg_similarity": 0.0,
+          "global_avg": 0.058,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.058, 偏离比 0.0%)",
+          "page": 65
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "100亿  1,000亿",
+          "avg_similarity": 0.0,
+          "global_avg": 0.042,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.042, 偏离比 0.0%)",
+          "page": 66
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "IntelligentRAN2.0",
+          "avg_similarity": 0.0,
+          "global_avg": 0.042,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.042, 偏离比 0.0%)",
+          "page": 66
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "0 bit 0 watt绿色架构",
+          "avg_similarity": 0.0,
+          "global_avg": 0.029,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.029, 偏离比 0.0%)",
+          "page": 67
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "多频站点租金",
+          "avg_similarity": 0.003,
+          "global_avg": 0.029,
+          "deviation_ratio": 0.0895,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.003 vs 全局 0.029, 偏离比 9.0%)",
+          "page": 67
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "128T128R",
+          "avg_similarity": 0.0,
+          "global_avg": 0.029,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.029, 偏离比 0.0%)",
+          "page": 67
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "高分辨率波束算法",
+          "avg_similarity": 0.0,
+          "global_avg": 0.029,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.029, 偏离比 0.0%)",
+          "page": 67
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "12Gbps",
+          "avg_similarity": 0.0,
+          "global_avg": 0.029,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.029, 偏离比 0.0%)",
+          "page": 67
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "LampSiteX",
+          "avg_similarity": 0.0,
+          "global_avg": 0.022,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.022, 偏离比 0.0%)",
+          "page": 68
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "10Gbps",
+          "avg_similarity": 0.0,
+          "global_avg": 0.022,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.022, 偏离比 0.0%)",
+          "page": 68
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "深度休眠，秒级唤醒",
+          "avg_similarity": 0.0,
+          "global_avg": 0.022,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.022, 偏离比 0.0%)",
+          "page": 68
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "LightSite",
+          "avg_similarity": 0.0,
+          "global_avg": 0.022,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.022, 偏离比 0.0%)",
+          "page": 68
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "10% TCO",
+          "avg_similarity": 0.0,
+          "global_avg": 0.022,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.022, 偏离比 0.0%)",
+          "page": 68
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "“0” 线缆",
+          "avg_similarity": 0.0,
+          "global_avg": 0.048,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.048, 偏离比 0.0%)",
+          "page": 69
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "波束更集中",
+          "avg_similarity": 0.0,
+          "global_avg": 0.048,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.048, 偏离比 0.0%)",
+          "page": 69
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "20+ 商用网络部署",
+          "avg_similarity": 0.0,
+          "global_avg": 0.048,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.048, 偏离比 0.0%)",
+          "page": 69
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "38.0%",
+          "avg_similarity": 0.0,
+          "global_avg": 0.04,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.040, 偏离比 0.0%)",
+          "page": 71
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "29.2%",
+          "avg_similarity": 0.0,
+          "global_avg": 0.04,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.040, 偏离比 0.0%)",
+          "page": 71
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "专利申请占比",
+          "avg_similarity": 0.004,
+          "global_avg": 0.04,
+          "deviation_ratio": 0.1001,
+          "tier": "warning",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.004 vs 全局 0.040, 偏离比 10.0%)",
+          "page": 71
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "150+",
+          "avg_similarity": 0.0,
+          "global_avg": 0.04,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.040, 偏离比 0.0%)",
+          "page": 71
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "重要席位",
+          "avg_similarity": 0.0,
+          "global_avg": 0.04,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.040, 偏离比 0.0%)",
+          "page": 71
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "高清视频",
+          "avg_similarity": 0.0,
+          "global_avg": 0.029,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.029, 偏离比 0.0%)",
+          "page": 72
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "云和AI",
+          "avg_similarity": 0.0,
+          "global_avg": 0.029,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.029, 偏离比 0.0%)",
+          "page": 72
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "AirPON",
+          "avg_similarity": 0.0,
+          "global_avg": 0.029,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.029, 偏离比 0.0%)",
+          "page": 72
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "DQ ODN",
+          "avg_similarity": 0.0,
+          "global_avg": 0.029,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.029, 偏离比 0.0%)",
+          "page": 72
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "Alps-WDM",
+          "avg_similarity": 0.0,
+          "global_avg": 0.029,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.029, 偏离比 0.0%)",
+          "page": 72
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "1Gbps",
+          "avg_similarity": 0.0,
+          "global_avg": 0.029,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.029, 偏离比 0.0%)",
+          "page": 72
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "100Mbps",
+          "avg_similarity": 0.0,
+          "global_avg": 0.029,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.029, 偏离比 0.0%)",
+          "page": 72
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "1ms 时延",
+          "avg_similarity": 0.0,
+          "global_avg": 0.029,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.029, 偏离比 0.0%)",
+          "page": 72
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "99.9999% 可靠性",
+          "avg_similarity": 0.0,
+          "global_avg": 0.029,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.029, 偏离比 0.0%)",
+          "page": 72
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "SD-WAN获 Interop金奖",
+          "avg_similarity": 0.0,
+          "global_avg": 0.022,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.022, 偏离比 0.0%)",
+          "page": 75
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "GPU&NPU",
+          "avg_similarity": 0.0,
+          "global_avg": 0.029,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.029, 偏离比 0.0%)",
+          "page": 76
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "CloudEngine XH16800",
+          "avg_similarity": 0.0,
+          "global_avg": 0.029,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.029, 偏离比 0.0%)",
+          "page": 76
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "万卡集群年中断60次",
+          "avg_similarity": 0.0,
+          "global_avg": 0.029,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.029, 偏离比 0.0%)",
+          "page": 76
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "可靠工业网络",
+          "avg_similarity": 0.0,
+          "global_avg": 0.023,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.023, 偏离比 0.0%)",
+          "page": 78
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "100%",
+          "avg_similarity": 0.0,
+          "global_avg": 0.032,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.032, 偏离比 0.0%)",
+          "page": 79
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "在线课堂卡顿",
+          "avg_similarity": 0.004,
+          "global_avg": 0.032,
+          "deviation_ratio": 0.132,
+          "tier": "warning",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.004 vs 全局 0.032, 偏离比 13.2%)",
+          "page": 79
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "5.5G",
+          "avg_similarity": 0.004,
+          "global_avg": 0.057,
+          "deviation_ratio": 0.0718,
+          "tier": "warning",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.004 vs 全局 0.057, 偏离比 7.2%)",
+          "page": 82
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "持续研发投入，实力获得业界广泛认可",
+          "avg_similarity": 0.0,
+          "global_avg": 0.059,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.059, 偏离比 0.0%)",
+          "page": 89
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "2023",
+          "avg_similarity": 0.0,
+          "global_avg": 0.059,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.059, 偏离比 0.0%)",
+          "page": 89
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "全面使能新兴应用",
+          "avg_similarity": 0.006,
+          "global_avg": 0.051,
+          "deviation_ratio": 0.113,
+          "tier": "warning",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.006 vs 全局 0.051, 偏离比 11.3%)",
+          "page": 90
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "生产 (Flash)",
+          "avg_similarity": 0.0,
+          "global_avg": 0.051,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.051, 偏离比 0.0%)",
+          "page": 90
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "OceanDisk",
+          "avg_similarity": 0.0,
+          "global_avg": 0.051,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.051, 偏离比 0.0%)",
+          "page": 90
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "OceanProtect",
+          "avg_similarity": 0.0,
+          "global_avg": 0.051,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.051, 偏离比 0.0%)",
+          "page": 90
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "绿色集约，数据缩减，大比例EC",
+          "avg_similarity": 0.0,
+          "global_avg": 0.023,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.023, 偏离比 0.0%)",
+          "page": 92
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "多副本资源浪费 仅33%资源利用率",
+          "avg_similarity": 0.0,
+          "global_avg": 0.023,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.023, 偏离比 0.0%)",
+          "page": 92
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "态势感知",
+          "avg_similarity": 0.0,
+          "global_avg": 0.021,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.021, 偏离比 0.0%)",
+          "page": 93
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "OceanProtect",
+          "avg_similarity": 0.0,
+          "global_avg": 0.021,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.021, 偏离比 0.0%)",
+          "page": 93
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "OceanStor Dorado",
+          "avg_similarity": 0.0,
+          "global_avg": 0.021,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.021, 偏离比 0.0%)",
+          "page": 93
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "AIRGAP",
+          "avg_similarity": 0.0,
+          "global_avg": 0.021,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.021, 偏离比 0.0%)",
+          "page": 93
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "通过业界唯一网存联动，实现端到端的保护能力",
+          "avg_similarity": 0.003,
+          "global_avg": 0.021,
+          "deviation_ratio": 0.1377,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.003 vs 全局 0.021, 偏离比 13.8%)",
+          "page": 93
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "数据全加密 音视频水印可追溯",
+          "avg_similarity": 0.004,
+          "global_avg": 0.035,
+          "deviation_ratio": 0.1292,
+          "tier": "warning",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.004 vs 全局 0.035, 偏离比 12.9%)",
+          "page": 95
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "最高精度微云台 0.5°超高精度 0噪声",
+          "avg_similarity": 0.0,
+          "global_avg": 0.046,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.046, 偏离比 0.0%)",
+          "page": 96
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "行业 应用",
+          "avg_similarity": 0.0,
+          "global_avg": 0.064,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.064, 偏离比 0.0%)",
+          "page": 97
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "大模型：CV | NLP | 多模态 | 科学研究 | 预测决策",
+          "avg_similarity": 0.0,
+          "global_avg": 0.064,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.064, 偏离比 0.0%)",
+          "page": 97
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "外场广泛感知与交互",
+          "avg_similarity": 0.0,
+          "global_avg": 0.064,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.064, 偏离比 0.0%)",
+          "page": 97
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "广域网络",
+          "avg_similarity": 0.0,
+          "global_avg": 0.064,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.064, 偏离比 0.0%)",
+          "page": 97
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "全球顶级专家与专业服务团队",
+          "avg_similarity": 0.003,
+          "global_avg": 0.032,
+          "deviation_ratio": 0.0852,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.003 vs 全局 0.032, 偏离比 8.5%)",
+          "page": 104
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "提升满意度",
+          "avg_similarity": 0.004,
+          "global_avg": 0.032,
+          "deviation_ratio": 0.1354,
+          "tier": "warning",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.004 vs 全局 0.032, 偏离比 13.5%)",
+          "page": 104
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "元图工坊",
+          "avg_similarity": 0.0,
+          "global_avg": 0.032,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.032, 偏离比 0.0%)",
+          "page": 104
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "Video Cube",
+          "avg_similarity": 0.0,
+          "global_avg": 0.032,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.032, 偏离比 0.0%)",
+          "page": 104
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "DataCube",
+          "avg_similarity": 0.0,
+          "global_avg": 0.032,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.032, 偏离比 0.0%)",
+          "page": 104
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "加速行业数智化",
+          "avg_similarity": 0.0,
+          "global_avg": 0.032,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.032, 偏离比 0.0%)",
+          "page": 104
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "趋势洞察",
+          "avg_similarity": 0.0,
+          "global_avg": 0.026,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.026, 偏离比 0.0%)",
+          "page": 105
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "HCIE",
+          "avg_similarity": 0.0,
+          "global_avg": 0.026,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.026, 偏离比 0.0%)",
+          "page": 105
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "HCIP",
+          "avg_similarity": 0.0,
+          "global_avg": 0.026,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.026, 偏离比 0.0%)",
+          "page": 105
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "HCIA",
+          "avg_similarity": 0.0,
+          "global_avg": 0.026,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.026, 偏离比 0.0%)",
+          "page": 105
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "P60 Art",
+          "avg_similarity": 0.0,
+          "global_avg": 0.028,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.028, 偏离比 0.0%)",
+          "page": 107
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "Iconic Design，一眼出挑的辨识度",
+          "avg_similarity": 0.0,
+          "global_avg": 0.028,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.028, 偏离比 0.0%)",
+          "page": 107
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "2019",
+          "avg_similarity": 0.0,
+          "global_avg": 0.035,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.035, 偏离比 0.0%)",
+          "page": 108
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "2020",
+          "avg_similarity": 0.0,
+          "global_avg": 0.035,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.035, 偏离比 0.0%)",
+          "page": 108
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "2021",
+          "avg_similarity": 0.0,
+          "global_avg": 0.035,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.035, 偏离比 0.0%)",
+          "page": 108
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "2023",
+          "avg_similarity": 0.0,
+          "global_avg": 0.035,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.035, 偏离比 0.0%)",
+          "page": 108
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "2016",
+          "avg_similarity": 0.0,
+          "global_avg": 0.035,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.035, 偏离比 0.0%)",
+          "page": 108
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "2018",
+          "avg_similarity": 0.0,
+          "global_avg": 0.035,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.035, 偏离比 0.0%)",
+          "page": 108
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "双摄 黑白融合",
+          "avg_similarity": 0.0,
+          "global_avg": 0.035,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.035, 偏离比 0.0%)",
+          "page": 108
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "大底三摄 超级夜景",
+          "avg_similarity": 0.0,
+          "global_avg": 0.035,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.035, 偏离比 0.0%)",
+          "page": 108
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "30 区域 | 85 可用区 | 2,800 CDN节点 | 240+ 云服务 | 10,000+ 云商店应用",
+          "avg_similarity": 0.004,
+          "global_avg": 0.038,
+          "deviation_ratio": 0.1062,
+          "tier": "warning",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.004 vs 全局 0.038, 偏离比 10.6%)",
+          "page": 110
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "安全云脑",
+          "avg_similarity": 0.0,
+          "global_avg": 0.038,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.038, 偏离比 0.0%)",
+          "page": 110
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "GaussDB",
+          "avg_similarity": 0.0,
+          "global_avg": 0.038,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.038, 偏离比 0.0%)",
+          "page": 110
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "媒体直播",
+          "avg_similarity": 0.0,
+          "global_avg": 0.038,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.038, 偏离比 0.0%)",
+          "page": 110
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "MRS/DLI",
+          "avg_similarity": 0.0,
+          "global_avg": 0.038,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.038, 偏离比 0.0%)",
+          "page": 110
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "盘古大模型",
+          "avg_similarity": 0.0,
+          "global_avg": 0.068,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.068, 偏离比 0.0%)",
+          "page": 111
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "三层架构，100+能力集，分层解耦",
+          "avg_similarity": 0.0,
+          "global_avg": 0.058,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.058, 偏离比 0.0%)",
+          "page": 112
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "安全可信，三种模式，灵活部署",
+          "avg_similarity": 0.001,
+          "global_avg": 0.058,
+          "deviation_ratio": 0.0177,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.001 vs 全局 0.058, 偏离比 1.8%)",
+          "page": 112
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "财务异常检测",
+          "avg_similarity": 0.008,
+          "global_avg": 0.058,
+          "deviation_ratio": 0.14,
+          "tier": "warning",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.008 vs 全局 0.058, 偏离比 14.0%)",
+          "page": 112
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "PCB板质检",
+          "avg_similarity": 0.007,
+          "global_avg": 0.058,
+          "deviation_ratio": 0.1118,
+          "tier": "warning",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.007 vs 全局 0.058, 偏离比 11.2%)",
+          "page": 112
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "传送带异物检测",
+          "avg_similarity": 0.008,
+          "global_avg": 0.058,
+          "deviation_ratio": 0.1323,
+          "tier": "warning",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.008 vs 全局 0.058, 偏离比 13.2%)",
+          "page": 112
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "偏光片质检",
+          "avg_similarity": 0.007,
+          "global_avg": 0.058,
+          "deviation_ratio": 0.1118,
+          "tier": "warning",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.007 vs 全局 0.058, 偏离比 11.2%)",
+          "page": 112
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "卷宗审核",
+          "avg_similarity": 0.0,
+          "global_avg": 0.058,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.058, 偏离比 0.0%)",
+          "page": 112
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "先导药物筛选",
+          "avg_similarity": 0.003,
+          "global_avg": 0.058,
+          "deviation_ratio": 0.0595,
+          "tier": "warning",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.003 vs 全局 0.058, 偏离比 5.9%)",
+          "page": 112
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "金融违约风险识别",
+          "avg_similarity": 0.004,
+          "global_avg": 0.058,
+          "deviation_ratio": 0.062,
+          "tier": "warning",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.004 vs 全局 0.058, 偏离比 6.2%)",
+          "page": 112
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "自然语言",
+          "avg_similarity": 0.0,
+          "global_avg": 0.058,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.058, 偏离比 0.0%)",
+          "page": 112
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "计算机视觉",
+          "avg_similarity": 0.006,
+          "global_avg": 0.058,
+          "deviation_ratio": 0.1,
+          "tier": "warning",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.006 vs 全局 0.058, 偏离比 10.0%)",
+          "page": 112
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "科学计算",
+          "avg_similarity": 0.006,
+          "global_avg": 0.058,
+          "deviation_ratio": 0.1,
+          "tier": "warning",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.006 vs 全局 0.058, 偏离比 10.0%)",
+          "page": 112
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "存算分离 三层池化按需灵活扩容",
+          "avg_similarity": 0.0,
+          "global_avg": 0.023,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.023, 偏离比 0.0%)",
+          "page": 113
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "性能持平本地SSD，TCO降低30%",
+          "avg_similarity": 0.0,
+          "global_avg": 0.023,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.023, 偏离比 0.0%)",
+          "page": 113
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "OBS存储层",
+          "avg_similarity": 0.0,
+          "global_avg": 0.023,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.023, 偏离比 0.0%)",
+          "page": 113
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "跨湖跨仓协同分析提效10倍",
+          "avg_similarity": 0.0,
+          "global_avg": 0.023,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.023, 偏离比 0.0%)",
+          "page": 113
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "企业数字化转型核心诉求",
+          "avg_similarity": 0.0,
+          "global_avg": 0.023,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.023, 偏离比 0.0%)",
+          "page": 113
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "版本交付周期",
+          "avg_similarity": 0.0,
+          "global_avg": 0.023,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.023, 偏离比 0.0%)",
+          "page": 114
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "71.74%",
+          "avg_similarity": 0.0,
+          "global_avg": 0.023,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.023, 偏离比 0.0%)",
+          "page": 114
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "产品数字化协同平台 IPDCenter",
+          "avg_similarity": 0.002,
+          "global_avg": 0.042,
+          "deviation_ratio": 0.0453,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.002 vs 全局 0.042, 偏离比 4.5%)",
+          "page": 115
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "联合产业生态伙伴",
+          "avg_similarity": 0.003,
+          "global_avg": 0.042,
+          "deviation_ratio": 0.0833,
+          "tier": "warning",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.003 vs 全局 0.042, 偏离比 8.3%)",
+          "page": 115
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "百人在线画一图 | 在线智能审查",
+          "avg_similarity": 0.0,
+          "global_avg": 0.042,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.042, 偏离比 0.0%)",
+          "page": 115
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "支持超大规模复杂场景 | 自动布局布线",
+          "avg_similarity": 0.002,
+          "global_avg": 0.042,
+          "deviation_ratio": 0.0446,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.002 vs 全局 0.042, 偏离比 4.5%)",
+          "page": 115
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "电子 装联 CAM",
+          "avg_similarity": 0.0,
+          "global_avg": 0.042,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.042, 偏离比 0.0%)",
+          "page": 115
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "LLAMA2 GLMV2 Stable Diffusion GLMV1 …",
+          "avg_similarity": 0.0,
+          "global_avg": 0.073,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.073, 偏离比 0.0%)",
+          "page": 117
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "立等可取，即开即用 千卡集群快速开通，当月业务上线",
+          "avg_similarity": 0.007,
+          "global_avg": 0.073,
+          "deviation_ratio": 0.0952,
+          "tier": "warning",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.007 vs 全局 0.073, 偏离比 9.5%)",
+          "page": 117
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "全栈优势，高效长稳 智能诊断+断点恢复，千卡训练30天不中断",
+          "avg_similarity": 0.003,
+          "global_avg": 0.073,
+          "deviation_ratio": 0.0475,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.003 vs 全局 0.073, 偏离比 4.7%)",
+          "page": 117
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "弹性灵活，按需使用 长稳业务包周期，突发业务按需调度",
+          "avg_similarity": 0.005,
+          "global_avg": 0.073,
+          "deviation_ratio": 0.0719,
+          "tier": "warning",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.005 vs 全局 0.073, 偏离比 7.2%)",
+          "page": 117
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "一键接入\u000b随取随用",
+          "avg_similarity": 0.003,
+          "global_avg": 0.073,
+          "deviation_ratio": 0.039,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.003 vs 全局 0.073, 偏离比 3.9%)",
+          "page": 117
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "仅中国市场",
+          "avg_similarity": 0.0,
+          "global_avg": 0.073,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.073, 偏离比 0.0%)",
+          "page": 117
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "运营 度电成本高、海量设备管理复杂",
+          "avg_similarity": 0.0,
+          "global_avg": 0.026,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.026, 偏离比 0.0%)",
+          "page": 119
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "沙特 红海新城",
+          "avg_similarity": 0.0,
+          "global_avg": 0.026,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.026, 偏离比 0.0%)",
+          "page": 119
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "并网 消纳弱、送出难",
+          "avg_similarity": 0.002,
+          "global_avg": 0.026,
+          "deviation_ratio": 0.0755,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.002 vs 全局 0.026, 偏离比 7.5%)",
+          "page": 119
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "墨西哥AIFA机场",
+          "avg_similarity": 0.0,
+          "global_avg": 0.03,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.030, 偏离比 0.0%)",
+          "page": 120
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "新加坡LTA地铁",
+          "avg_similarity": 0.0,
+          "global_avg": 0.03,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.030, 偏离比 0.0%)",
+          "page": 120
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "UPS5000-H",
+          "avg_similarity": 0.0,
+          "global_avg": 0.03,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.030, 偏离比 0.0%)",
+          "page": 120
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "激光光源",
+          "avg_similarity": 0.0,
+          "global_avg": 0.023,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.023, 偏离比 0.0%)",
+          "page": 121
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "100万+受益学生",
+          "avg_similarity": 0.0,
+          "global_avg": 0.02,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.020, 偏离比 0.0%)",
+          "page": 129
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "高校人才",
+          "avg_similarity": 0.0,
+          "global_avg": 0.02,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.020, 偏离比 0.0%)",
+          "page": 129
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "工具支持",
+          "avg_similarity": 0.0,
+          "global_avg": 0.02,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.020, 偏离比 0.0%)",
+          "page": 129
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "CodeArts",
+          "avg_similarity": 0.0,
+          "global_avg": 0.02,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.020, 偏离比 0.0%)",
+          "page": 129
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "ModelArts",
+          "avg_similarity": 0.0,
+          "global_avg": 0.02,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.020, 偏离比 0.0%)",
+          "page": 129
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "Dev Kit",
+          "avg_similarity": 0.0,
+          "global_avg": 0.02,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.020, 偏离比 0.0%)",
+          "page": 129
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "Astro",
+          "avg_similarity": 0.0,
+          "global_avg": 0.02,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.020, 偏离比 0.0%)",
+          "page": 129
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "员工关爱 商业道德 供应责任 社区责任",
+          "avg_similarity": 0.0,
+          "global_avg": 0.025,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.025, 偏离比 0.0%)",
+          "page": 133
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "绿色环保",
+          "avg_similarity": 0.0,
+          "global_avg": 0.025,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.025, 偏离比 0.0%)",
+          "page": 133
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "数字包容",
+          "avg_similarity": 0.0,
+          "global_avg": 0.025,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.025, 偏离比 0.0%)",
+          "page": 133
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "和谐生态",
+          "avg_similarity": 0.0,
+          "global_avg": 0.025,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.025, 偏离比 0.0%)",
+          "page": 133
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "TECH4ALL：华为面向数字包容领域的倡议和长期行动计划",
+          "avg_similarity": 0.0,
+          "global_avg": 0.025,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.025, 偏离比 0.0%)",
+          "page": 135
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "解决方案",
+          "avg_similarity": 0.0,
+          "global_avg": 0.054,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.054, 偏离比 0.0%)",
+          "page": 136
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "合作伙伴",
+          "avg_similarity": 0.0,
+          "global_avg": 0.054,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.054, 偏离比 0.0%)",
+          "page": 136
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "埃塞尔比亚",
+          "avg_similarity": 0.0,
+          "global_avg": 0.054,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.054, 偏离比 0.0%)",
+          "page": 136
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "合作伙伴",
+          "avg_similarity": 0.0,
+          "global_avg": 0.02,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.020, 偏离比 0.0%)",
+          "page": 139
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "训练图片",
+          "avg_similarity": 0.0,
+          "global_avg": 0.02,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.020, 偏离比 0.0%)",
+          "page": 139
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "合作伙伴",
+          "avg_similarity": 0.0,
+          "global_avg": 0.034,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.034, 偏离比 0.0%)",
+          "page": 140
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "1,600+家",
+          "avg_similarity": 0.0,
+          "global_avg": 0.071,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.071, 偏离比 0.0%)",
+          "page": 146
+        },
+        {
+          "type": "C9_OUTLIER",
+          "text": "书籍/刊物",
+          "avg_similarity": 0.0,
+          "global_avg": 0.032,
+          "deviation_ratio": 0.0,
+          "tier": "critical",
+          "detail": "文本块与同页其他内容不相关 (相似度 0.000 vs 全局 0.032, 偏离比 0.0%)",
+          "page": 148
+        },
+        {
+          "type": "C2_EMPTY_PAGE",
+          "char_count": 0,
+          "detail": "页面几乎无实质内容",
+          "page": 149
+        },
+        {
+          "type": "C3_CONTENT_MATCH",
+          "role": "结尾",
+          "issue": "结尾页未检测到致谢/Q&A等典型结尾信息",
+          "page": 149
+        },
+        {
+          "type": "C4_REDUNDANCY",
+          "page1": 35,
+          "page2": 36,
+          "similarity": 0.759,
+          "detail": "页码 35 和 36 内容高度相似 (sim=0.76)"
+        },
+        {
+          "type": "C4_REDUNDANCY",
+          "page1": 54,
+          "page2": 55,
+          "similarity": 0.941,
+          "detail": "页码 54 和 55 内容高度相似 (sim=0.94)"
+        },
+        {
+          "type": "C8_STRUCTURE",
+          "has_cover": true,
+          "has_closing": false,
+          "issues": [
+            "缺少结尾页（致谢/Q&A）"
+          ],
+          "detail": "缺少结尾页（致谢/Q&A）"
+        }
+      ],
+      "conclusion": "质量等级: 需修复  |  共 149 页  |  ERROR 1  CRITICAL 191  WARNING 221\n\n========================================\n[阻断] 以下问题必须修复:\n  空页: 1 处\n    - 第149页: 页面几乎无实质内容\n\n========================================\n[严重] 文本离群 191 处（内容与页面主题极不相关）:\n  - 第1页: \"内容框架\"\n  - 第1页: \"正式使用时请删除此页\"\n  - 第5页: \"单位：元人民币\"\n  ... 已折叠 212 条\n  >>> 同类问题出现 217 次，建议检查 文本离群 的检测阈值是否合理\n\n========================================\n[警告] 建议关注:\n  内容冗余: 2 处\n    - 第?页: 页码 35 和 36 内容高度相似 (sim=0.76)\n    - 第?页: 页码 54 和 55 内容高度相似 (sim=0.94)\n  类型-内容不匹配: 1 处\n    - 第149页: \n  结构不完整: 1 处\n    - 第?页: 缺少结尾页（致谢/Q&A）\n\n[参考] 轻度文本离群 26 处（偏离较轻，仅供参考）\n\n[提示] 以下页面健康分低于50，建议重点复核:\n  第7页 (分值 25, 问题: 文本离群)\n  第9页 (分值 0, 问题: 文本离群)\n  第20页 (分值 10, 问题: 文本离群)\n  第28页 (分值 19, 问题: 文本离群)\n  第31页 (分值 40, 问题: 文本离群)"
+    },
+    "gate_check": {
+      "file": "C:/备份/kb_search/hw_template.pptx",
+      "template": "月度/季度经营例会材料",
+      "template_description": "适用：内部例会、BU review。允许灵活顺序，但必须覆盖：实绩→偏差信号→TOP3问题→行动项",
+      "total_pages": 149,
+      "page_assignments": [
+        {
+          "page": 11,
+          "title": "成长的驱动力",
+          "stage_id": "top_issues",
+          "match_score": 13,
+          "title_quality": "neutral"
+        },
+        {
+          "page": 123,
+          "title": "强力投入研究与开发，以创新驱动未来发展",
+          "stage_id": "top_issues",
+          "match_score": 11,
+          "title_quality": "neutral"
+        }
+      ],
+      "missing_stages": [
+        {
+          "stage_id": "dashboard",
+          "label": "仪表盘 / 核心KPI实绩",
+          "order": 0
+        },
+        {
+          "stage_id": "variance_signal",
+          "label": "红绿灯 / 偏差 / 预警信号",
+          "order": 0
+        },
+        {
+          "stage_id": "action_items",
+          "label": "行动项（owner + due date + 验收）",
+          "order": 0
+        }
+      ],
+      "order_violations": [],
+      "weak_titles": [
+        {
+          "page": 8,
+          "title": "华为云",
+          "reason": "标题过短且无关键信息: \"华为云\""
+        },
+        {
+          "page": 17,
+          "title": "×",
+          "reason": "标题过短 (1 字符): \"×\""
+        },
+        {
+          "page": 29,
+          "title": "公司战略",
+          "reason": "标题过短且无关键信息: \"公司战略\""
+        },
+        {
+          "page": 59,
+          "title": "5亿+",
+          "reason": "标题过短且无关键信息: \"5亿+\""
+        },
+        {
+          "page": 63,
+          "title": "公司战略",
+          "reason": "标题过短且无关键信息: \"公司战略\""
+        },
+        {
+          "page": 111,
+          "title": "…",
+          "reason": "标题过短 (1 字符): \"…\""
+        },
+        {
+          "page": 119,
+          "title": "工商业",
+          "reason": "标题过短且无关键信息: \"工商业\""
+        },
+        {
+          "page": 121,
+          "title": "光场屏",
+          "reason": "标题过短且无关键信息: \"光场屏\""
+        },
+        {
+          "page": 122,
+          "title": "公司战略",
+          "reason": "标题过短且无关键信息: \"公司战略\""
+        }
+      ],
+      "empty_titles": [
+        {
+          "page": 149,
+          "title": "",
+          "reason": "标题为空"
+        }
+      ],
+      "neutral_titles": [
+        {
+          "page": 1,
+          "title": "内容框架"
+        },
+        {
+          "page": 4,
+          "title": "4,175 亿人民币"
+        },
+        {
+          "page": 5,
+          "title": "保持强研发投入，以创新为客户和社会创造更多价值"
+        },
+        {
+          "page": 6,
+          "title": "企业业务：携手客户和伙伴加速行业智能化，助力数智经济发展"
+        },
+        {
+          "page": 7,
+          "title": "终端业务：加速生态化转型，全场景终端布局不断完善"
+        },
+        {
+          "page": 9,
+          "title": "数字能源业务：融合数字技术和电力电子技术，加速行业低碳转型"
+        },
+        {
+          "page": 11,
+          "title": "成长的驱动力"
+        },
+        {
+          "page": 12,
+          "title": "趋势洞察"
+        },
+        {
+          "page": 14,
+          "title": "10倍 撬动效应"
+        },
+        {
+          "page": 16,
+          "title": "趋势洞察"
+        },
+        {
+          "page": 18,
+          "title": "5G进入发展快车道，5.5G开启商用元年"
+        },
+        {
+          "page": 19,
+          "title": "从联接到业务使能，5.5G核心网持续释放移动网络的商业价值"
+        },
+        {
+          "page": 21,
+          "title": "人工智能走进企业核心生产系统，行业加速向智能化升级"
+        },
+        {
+          "page": 22,
+          "title": "公共事业：政府与公共事业加速智能化，共建“数智社会”"
+        },
+        {
+          "page": 25,
+          "title": "制造与大企业：数实融合走深向实，智能化将成就百业齐放"
+        },
+        {
+          "page": 27,
+          "title": "油气：勘探研究与生产作业向智能化演进，助力油气增储上产及高效运营"
+        },
+        {
+          "page": 28,
+          "title": "ISP : ICT基础设施向万兆化、服务化、智能化发展"
+        },
+        {
+          "page": 30,
+          "title": "基础设施架构创新 云网协同"
+        },
+        {
+          "page": 31,
+          "title": "云手机 玩游戏=看视频"
+        },
+        {
+          "page": 32,
+          "title": "Full-scenario 全场景协同"
+        },
+        {
+          "page": 33,
+          "title": "体验创新：通信大模型助力运营商释放网络与业务潜能"
+        },
+        {
+          "page": 34,
+          "title": "携手伙伴，深耕行业，加速行业智能化"
+        },
+        {
+          "page": 51,
+          "title": "8年战略合作"
+        },
+        {
+          "page": 52,
+          "title": "伙伴：持续发展伙伴，助力行业客户智能化转型"
+        },
+        {
+          "page": 53,
+          "title": "﻿泛政企客户：携手伙伴，加速中小企业数字化与智能化"
+        },
+        {
+          "page": 56,
+          "title": "联合伙伴，构筑“全生命周期”服务能力，加速行业智能化"
+        },
+        {
+          "page": 57,
+          "title": "HarmonyOS 持续迭代演进，智慧安全，常用常新"
+        },
+        {
+          "page": 60,
+          "title": "全面赋能鸿蒙生态开发者、助力伙伴、开展人才培养"
+        },
+        {
+          "page": 62,
+          "title": "华为全场景\u000b智慧生活战略"
+        },
+        {
+          "page": 65,
+          "title": "持续领先，持续引领产业，持续支撑客户商业成功"
+        },
+        {
+          "page": 66,
+          "title": "无线迈向5.5G商用时代，满足多元化业务体验升级及行业数智化转型"
+        },
+        {
+          "page": 67,
+          "title": "TDD走向更多频段、更多通道ELAA，构筑万兆极致体验"
+        },
+        {
+          "page": 68,
+          "title": "DIS性能节能双升级，室内走向全场景数字化"
+        },
+        {
+          "page": 69,
+          "title": "20+ 商用网络部署"
+        },
+        {
+          "page": 70,
+          "title": "IntelligentRAN，迈向L4高阶自智网络"
+        },
+        {
+          "page": 71,
+          "title": "27+年持续投入光技术研发，深度参与全球标准制定"
+        },
+        {
+          "page": 72,
+          "title": "F5.5G全光目标网，加速万兆超宽带发展"
+        },
+        {
+          "page": 74,
+          "title": "F5G全光承载：坚如磐石的行业光通信网，助力电力交通数智化"
+        },
+        {
+          "page": 79,
+          "title": "网络数字地图：数据 + 知识协同, 筑基网络智能化平台"
+        },
+        {
+          "page": 80,
+          "title": "从5G核心网走向5.5G智能核心网，持续使能新商业"
+        },
+        {
+          "page": 83,
+          "title": "ADN构筑通信大模型底座，使能四大商业价值"
+        },
+        {
+          "page": 84,
+          "title": "ADN使能MBB高稳质优，绿色节能"
+        },
+        {
+          "page": 85,
+          "title": "ADN使能FBB网络自治，提质增效"
+        },
+        {
+          "page": 87,
+          "title": "openEuler：面向数字基础设施的开源操作系统"
+        },
+        {
+          "page": 88,
+          "title": "开放创新的昇腾 AI 基础软硬件平台"
+        },
+        {
+          "page": 89,
+          "title": "持续研发投入，实力获得业界广泛认可"
+        },
+        {
+          "page": 91,
+          "title": "OceanStor A800：全球领先的AI知识库存储加速大模型训练/推理"
+        },
+        {
+          "page": 92,
+          "title": "OceanDisk智能盘框：面向云/互联网/HPC场景的最佳存储底座"
+        },
+        {
+          "page": 95,
+          "title": "业界首款智能双模引擎"
+        },
+        {
+          "page": 96,
+          "title": "新一代旗舰IdeaHub ES2 Plus，鸿蒙智慧办公，高层会议首选"
+        },
+        {
+          "page": 97,
+          "title": "产品组合方案：助力客户建设先进的数字基础设施"
+        },
+        {
+          "page": 98,
+          "title": "园区：创新ICT基础设施，使能伙伴，持续助力园区数字化转型"
+        },
+        {
+          "page": 99,
+          "title": "数字站点：助力外场基础设施数智化"
+        },
+        {
+          "page": 100,
+          "title": "广域网络：构筑广域目标网，释放数据与算力的潜能"
+        },
+        {
+          "page": 102,
+          "title": "智稳网络：为网络稳健运行护航，行稳致远"
+        },
+        {
+          "page": 103,
+          "title": "智能运维：+AI，引领智能运维转型"
+        },
+        {
+          "page": 105,
+          "title": "智赋人才：链接全球智慧，培养智能时代新型数智人才"
+        },
+        {
+          "page": 109,
+          "title": "材料/可靠：特殊材质与制造工艺，耐摔、抗冲击、抗水独步领先"
+        },
+        {
+          "page": 110,
+          "title": "华为云：AI Ready，加速千行万业智能升级"
+        },
+        {
+          "page": 112,
+          "title": "秉承开放与安全，守护客户核心关切，帮助客户炼好自己的大模型"
+        },
+        {
+          "page": 113,
+          "title": "DataArts：数据治理生产线，一站式数智融合开发与治理"
+        },
+        {
+          "page": 115,
+          "title": "CraftArts：硬件开发生产线，重塑工业软件协同模式和开发体验"
+        },
+        {
+          "page": 116,
+          "title": "分布式QingTian：系统性架构升级，打破单服务器硬件限制"
+        },
+        {
+          "page": 117,
+          "title": "昇腾AI云服务，澎湃算力支持大模型普惠"
+        },
+        {
+          "page": 120,
+          "title": "数据中心能源：构筑绿色可靠算力底座，让数字世界坚定运行"
+        },
+        {
+          "page": 123,
+          "title": "强力投入研究与开发，以创新驱动未来发展"
+        },
+        {
+          "page": 126,
+          "title": "粘结世界智慧，培育青年才俊，攻克产业难题，共建学术社区"
+        },
+        {
+          "page": 128,
+          "title": "开源的坚定支持者和重要贡献者"
+        },
+        {
+          "page": 129,
+          "title": "激发生态创新，加大技术赋能，助力生态价值创造"
+        },
+        {
+          "page": 133,
+          "title": "华为聚焦可持续发展四大战略，创造社会价值"
+        },
+        {
+          "page": 135,
+          "title": "TECH4ALL：华为面向数字包容领域的倡议和长期行动计划"
+        },
+        {
+          "page": 139,
+          "title": "保护脆弱环境：守护鸟中国宝--东方白鹳"
+        },
+        {
+          "page": 143,
+          "title": "尊重和保护隐私，依法合规，满足客户、消费者和雇员的隐私期望"
+        },
+        {
+          "page": 144,
+          "title": "践行节能减排的创新和实践，加速行业低碳化转型"
+        },
+        {
+          "page": 147,
+          "title": "未来种子：为万物互联的智能世界培养数字人才"
+        },
+        {
+          "page": 148,
+          "title": "华为ICT学院：联接全球2700+所高校，为社会培养ICT人才"
+        }
+      ],
+      "unmatched_pages": [
+        {
+          "page": 1,
+          "title": "内容框架",
+          "quality": "neutral"
+        },
+        {
+          "page": 2,
+          "title": "华为是全球领先的ICT基础设施和智能终端提供商",
+          "quality": "strong"
+        },
+        {
+          "page": 3,
+          "title": "聚焦ICT技术，面向三类客户，携手生态及伙伴提供产品解决方案和服务",
+          "quality": "strong"
+        },
+        {
+          "page": 4,
+          "title": "4,175 亿人民币",
+          "quality": "neutral"
+        },
+        {
+          "page": 5,
+          "title": "保持强研发投入，以创新为客户和社会创造更多价值",
+          "quality": "neutral"
+        },
+        {
+          "page": 6,
+          "title": "企业业务：携手客户和伙伴加速行业智能化，助力数智经济发展",
+          "quality": "neutral"
+        },
+        {
+          "page": 7,
+          "title": "终端业务：加速生态化转型，全场景终端布局不断完善",
+          "quality": "neutral"
+        },
+        {
+          "page": 8,
+          "title": "华为云",
+          "quality": "weak"
+        },
+        {
+          "page": 9,
+          "title": "数字能源业务：融合数字技术和电力电子技术，加速行业低碳转型",
+          "quality": "neutral"
+        },
+        {
+          "page": 10,
+          "title": "智能汽车解决方案业务：携手伙伴，引领汽车产业智能化发展",
+          "quality": "strong"
+        },
+        {
+          "page": 12,
+          "title": "趋势洞察",
+          "quality": "neutral"
+        },
+        {
+          "page": 13,
+          "title": "智能世界是人类发展的必由之路，带来更美好的生活，更和谐的社会",
+          "quality": "strong"
+        },
+        {
+          "page": 14,
+          "title": "10倍 撬动效应",
+          "quality": "neutral"
+        },
+        {
+          "page": 15,
+          "title": "各国积极行动，陆续发布相关战略，聚焦提升智能化及绿色竞争力",
+          "quality": "strong"
+        },
+        {
+          "page": 16,
+          "title": "趋势洞察",
+          "quality": "neutral"
+        },
+        {
+          "page": 17,
+          "title": "×",
+          "quality": "weak"
+        },
+        {
+          "page": 18,
+          "title": "5G进入发展快车道，5.5G开启商用元年",
+          "quality": "neutral"
+        },
+        {
+          "page": 19,
+          "title": "从联接到业务使能，5.5G核心网持续释放移动网络的商业价值",
+          "quality": "neutral"
+        },
+        {
+          "page": 20,
+          "title": "非结构化数据爆发式增长，AI加速数据资产化，存力正经历五大变化",
+          "quality": "strong"
+        },
+        {
+          "page": 21,
+          "title": "人工智能走进企业核心生产系统，行业加速向智能化升级",
+          "quality": "neutral"
+        },
+        {
+          "page": 22,
+          "title": "公共事业：政府与公共事业加速智能化，共建“数智社会”",
+          "quality": "neutral"
+        },
+        {
+          "page": 23,
+          "title": "金融：智能化加速业务决策，服务迈向无处不在",
+          "quality": "strong"
+        },
+        {
+          "page": 24,
+          "title": "电力：数智赋能新型电力系统，数能融合促进能源高质量发展",
+          "quality": "strong"
+        },
+        {
+          "page": 25,
+          "title": "制造与大企业：数实融合走深向实，智能化将成就百业齐放",
+          "quality": "neutral"
+        },
+        {
+          "page": 26,
+          "title": "矿山：数智技术赋能安全生产，智能矿山建设成为必由之路",
+          "quality": "strong"
+        },
+        {
+          "page": 27,
+          "title": "油气：勘探研究与生产作业向智能化演进，助力油气增储上产及高效运营",
+          "quality": "neutral"
+        },
+        {
+          "page": 28,
+          "title": "ISP : ICT基础设施向万兆化、服务化、智能化发展",
+          "quality": "neutral"
+        },
+        {
+          "page": 29,
+          "title": "公司战略",
+          "quality": "weak"
+        },
+        {
+          "page": 30,
+          "title": "基础设施架构创新 云网协同",
+          "quality": "neutral"
+        },
+        {
+          "page": 31,
+          "title": "云手机 玩游戏=看视频",
+          "quality": "neutral"
+        },
+        {
+          "page": 32,
+          "title": "Full-scenario 全场景协同",
+          "quality": "neutral"
+        },
+        {
+          "page": 33,
+          "title": "体验创新：通信大模型助力运营商释放网络与业务潜能",
+          "quality": "neutral"
+        },
+        {
+          "page": 34,
+          "title": "携手伙伴，深耕行业，加速行业智能化",
+          "quality": "neutral"
+        },
+        {
+          "page": 35,
+          "title": "以客户为中心，持续推出有竞争力的产品/产品组合和场景化解决方案",
+          "quality": "strong"
+        },
+        {
+          "page": 36,
+          "title": "以客户为中心，持续推出有竞争力的产品/产品组合和场景化解决方案",
+          "quality": "strong"
+        },
+        {
+          "page": 37,
+          "title": "政务：AI赋能政务服务，实现“能办、可办”向“好办、智办”升级",
+          "quality": "strong"
+        },
+        {
+          "page": 38,
+          "title": "政务：政府骨干网，助力乌干达实现数字化愿景",
+          "quality": "strong"
+        },
+        {
+          "page": 39,
+          "title": "教育：智慧教室实现创新教学，加速教学全流程智能化",
+          "quality": "strong"
+        },
+        {
+          "page": 40,
+          "title": "医疗：打造智慧医院新标杆，全面提升诊疗效率和就医体验",
+          "quality": "strong"
+        },
+        {
+          "page": 41,
+          "title": "金融：基于云原生构建下一代数字核心系统，加速业务快速转型",
+          "quality": "strong"
+        },
+        {
+          "page": 42,
+          "title": "航空：构建有世界影响力，国内领先的机场集团",
+          "quality": "strong"
+        },
+        {
+          "page": 43,
+          "title": "城轨：城轨云解决方案助力企业数字化转型升级",
+          "quality": "strong"
+        },
+        {
+          "page": 44,
+          "title": "城轨：LTE-M构建极简安全可靠的城轨通信专网",
+          "quality": "strong"
+        },
+        {
+          "page": 45,
+          "title": "城市交通：数智赋能，打造城市综合交通管控服务新范式",
+          "quality": "strong"
+        },
+        {
+          "page": 46,
+          "title": "港口：多级运管平台提升管控与协同发展能力，迈向港产城融合发展",
+          "quality": "strong"
+        },
+        {
+          "page": 47,
+          "title": "口岸：智慧卡口助力口岸通关效率提升",
+          "quality": "strong"
+        },
+        {
+          "page": 48,
+          "title": "电力：打造工业级数字底座，助力陕西建设现代智慧配电物联网",
+          "quality": "strong"
+        },
+        {
+          "page": 49,
+          "title": "制造：以数字底座沉淀能力打造智慧工厂",
+          "quality": "strong"
+        },
+        {
+          "page": 50,
+          "title": "矿业：盘古矿山大模型助力矿山客户实现AI应用“工业化”开发",
+          "quality": "strong"
+        },
+        {
+          "page": 51,
+          "title": "8年战略合作",
+          "quality": "neutral"
+        },
+        {
+          "page": 52,
+          "title": "伙伴：持续发展伙伴，助力行业客户智能化转型",
+          "quality": "neutral"
+        },
+        {
+          "page": 53,
+          "title": "﻿泛政企客户：携手伙伴，加速中小企业数字化与智能化",
+          "quality": "neutral"
+        },
+        {
+          "page": 54,
+          "title": "小微企业：以分销商为主，以工程商为中心，构建健康的分销伙伴体系",
+          "quality": "strong"
+        },
+        {
+          "page": 55,
+          "title": "小微企业：以分销商为主，以工程商为中心，构建健康的分销伙伴体系",
+          "quality": "strong"
+        },
+        {
+          "page": 56,
+          "title": "联合伙伴，构筑“全生命周期”服务能力，加速行业智能化",
+          "quality": "neutral"
+        },
+        {
+          "page": 57,
+          "title": "HarmonyOS 持续迭代演进，智慧安全，常用常新",
+          "quality": "neutral"
+        },
+        {
+          "page": 58,
+          "title": "鸿蒙原生应用全面启动，为开发者提供从底座到工具全栈方案",
+          "quality": "strong"
+        },
+        {
+          "page": 59,
+          "title": "5亿+",
+          "quality": "weak"
+        },
+        {
+          "page": 60,
+          "title": "全面赋能鸿蒙生态开发者、助力伙伴、开展人才培养",
+          "quality": "neutral"
+        },
+        {
+          "page": 61,
+          "title": "持续建设高端零售门店，打造消费者服务体验的标杆",
+          "quality": "strong"
+        },
+        {
+          "page": 62,
+          "title": "华为全场景\u000b智慧生活战略",
+          "quality": "neutral"
+        },
+        {
+          "page": 63,
+          "title": "公司战略",
+          "quality": "weak"
+        },
+        {
+          "page": 64,
+          "title": "拥抱智能时代，打造领先的ICT数智基础设施",
+          "quality": "strong"
+        },
+        {
+          "page": 65,
+          "title": "持续领先，持续引领产业，持续支撑客户商业成功",
+          "quality": "neutral"
+        },
+        {
+          "page": 66,
+          "title": "无线迈向5.5G商用时代，满足多元化业务体验升级及行业数智化转型",
+          "quality": "neutral"
+        },
+        {
+          "page": 67,
+          "title": "TDD走向更多频段、更多通道ELAA，构筑万兆极致体验",
+          "quality": "neutral"
+        },
+        {
+          "page": 68,
+          "title": "DIS性能节能双升级，室内走向全场景数字化",
+          "quality": "neutral"
+        },
+        {
+          "page": 69,
+          "title": "20+ 商用网络部署",
+          "quality": "neutral"
+        },
+        {
+          "page": 70,
+          "title": "IntelligentRAN，迈向L4高阶自智网络",
+          "quality": "neutral"
+        },
+        {
+          "page": 71,
+          "title": "27+年持续投入光技术研发，深度参与全球标准制定",
+          "quality": "neutral"
+        },
+        {
+          "page": 72,
+          "title": "F5.5G全光目标网，加速万兆超宽带发展",
+          "quality": "neutral"
+        },
+        {
+          "page": 73,
+          "title": "全光联接加速数字化建网，打造超千兆极致体验",
+          "quality": "strong"
+        },
+        {
+          "page": 74,
+          "title": "F5G全光承载：坚如磐石的行业光通信网，助力电力交通数智化",
+          "quality": "neutral"
+        },
+        {
+          "page": 75,
+          "title": "Net5.5G构建智能时代高品质超宽智能运力网络，获得业界广泛认可",
+          "quality": "strong"
+        },
+        {
+          "page": 76,
+          "title": "超融合数据中心网络：构建AI数据中心高运力网络，多元算力智能管理",
+          "quality": "strong"
+        },
+        {
+          "page": 77,
+          "title": "广域网络：Net5.5G融合承载网络，助力运营商全业务增长",
+          "quality": "strong"
+        },
+        {
+          "page": 78,
+          "title": "高品质万兆园区：以体验为中心，打造高品质万兆园区",
+          "quality": "strong"
+        },
+        {
+          "page": 79,
+          "title": "网络数字地图：数据 + 知识协同, 筑基网络智能化平台",
+          "quality": "neutral"
+        },
+        {
+          "page": 80,
+          "title": "从5G核心网走向5.5G智能核心网，持续使能新商业",
+          "quality": "neutral"
+        },
+        {
+          "page": 81,
+          "title": "智能分组核心网，通过网络智能和增强用户面实现体验经营和泛在万兆",
+          "quality": "strong"
+        },
+        {
+          "page": 82,
+          "title": "自智网络产业稳步推进，华为积极推动产业繁荣",
+          "quality": "strong"
+        },
+        {
+          "page": 83,
+          "title": "ADN构筑通信大模型底座，使能四大商业价值",
+          "quality": "neutral"
+        },
+        {
+          "page": 84,
+          "title": "ADN使能MBB高稳质优，绿色节能",
+          "quality": "neutral"
+        },
+        {
+          "page": 85,
+          "title": "ADN使能FBB网络自治，提质增效",
+          "quality": "neutral"
+        },
+        {
+          "page": 86,
+          "title": "鲲鹏、昇腾生态稳步发展 累计发展570万+开发者、6,300+合作伙伴，孵化17,400+解决方案",
+          "quality": "strong"
+        },
+        {
+          "page": 87,
+          "title": "openEuler：面向数字基础设施的开源操作系统",
+          "quality": "neutral"
+        },
+        {
+          "page": 88,
+          "title": "开放创新的昇腾 AI 基础软硬件平台",
+          "quality": "neutral"
+        },
+        {
+          "page": 89,
+          "title": "持续研发投入，实力获得业界广泛认可",
+          "quality": "neutral"
+        },
+        {
+          "page": 90,
+          "title": "构建先进数据存力，释放数据价值",
+          "quality": "strong"
+        },
+        {
+          "page": 91,
+          "title": "OceanStor A800：全球领先的AI知识库存储加速大模型训练/推理",
+          "quality": "neutral"
+        },
+        {
+          "page": 92,
+          "title": "OceanDisk智能盘框：面向云/互联网/HPC场景的最佳存储底座",
+          "quality": "neutral"
+        },
+        {
+          "page": 93,
+          "title": "业界首创6层防勒索解决方案，构筑数据安全最后一道防线",
+          "quality": "strong"
+        },
+        {
+          "page": 94,
+          "title": "智能协作：从会议到办公到生产，以实时音视频通信助力构建智能世界",
+          "quality": "strong"
+        },
+        {
+          "page": 95,
+          "title": "业界首款智能双模引擎",
+          "quality": "neutral"
+        },
+        {
+          "page": 96,
+          "title": "新一代旗舰IdeaHub ES2 Plus，鸿蒙智慧办公，高层会议首选",
+          "quality": "neutral"
+        },
+        {
+          "page": 97,
+          "title": "产品组合方案：助力客户建设先进的数字基础设施",
+          "quality": "neutral"
+        },
+        {
+          "page": 98,
+          "title": "园区：创新ICT基础设施，使能伙伴，持续助力园区数字化转型",
+          "quality": "neutral"
+        },
+        {
+          "page": 99,
+          "title": "数字站点：助力外场基础设施数智化",
+          "quality": "neutral"
+        },
+        {
+          "page": 100,
+          "title": "广域网络：构筑广域目标网，释放数据与算力的潜能",
+          "quality": "neutral"
+        },
+        {
+          "page": 101,
+          "title": "持续领先，成为最可信赖的服务伙伴，共建极致体验的智能世界",
+          "quality": "strong"
+        },
+        {
+          "page": 102,
+          "title": "智稳网络：为网络稳健运行护航，行稳致远",
+          "quality": "neutral"
+        },
+        {
+          "page": 103,
+          "title": "智能运维：+AI，引领智能运维转型",
+          "quality": "neutral"
+        },
+        {
+          "page": 104,
+          "title": "智优体验：打造领先网络性能与极致业务体验，激发数据新价值",
+          "quality": "strong"
+        },
+        {
+          "page": 105,
+          "title": "智赋人才：链接全球智慧，培养智能时代新型数智人才",
+          "quality": "neutral"
+        },
+        {
+          "page": 106,
+          "title": "围绕消费者核心需求，打造引领未来的极优体验",
+          "quality": "strong"
+        },
+        {
+          "page": 107,
+          "title": "ID/形态：打造极致、简约、纯净的设计风格，引领折叠形态创新",
+          "quality": "strong"
+        },
+        {
+          "page": 108,
+          "title": "影像：围绕光机电算持续创新，成为消费者心目中的影像王者",
+          "quality": "strong"
+        },
+        {
+          "page": 109,
+          "title": "材料/可靠：特殊材质与制造工艺，耐摔、抗冲击、抗水独步领先",
+          "quality": "neutral"
+        },
+        {
+          "page": 110,
+          "title": "华为云：AI Ready，加速千行万业智能升级",
+          "quality": "neutral"
+        },
+        {
+          "page": 111,
+          "title": "…",
+          "quality": "weak"
+        },
+        {
+          "page": 112,
+          "title": "秉承开放与安全，守护客户核心关切，帮助客户炼好自己的大模型",
+          "quality": "neutral"
+        },
+        {
+          "page": 113,
+          "title": "DataArts：数据治理生产线，一站式数智融合开发与治理",
+          "quality": "neutral"
+        },
+        {
+          "page": 114,
+          "title": "CodeArts：智能化软件开发生产线，加速企业应用现代化",
+          "quality": "strong"
+        },
+        {
+          "page": 115,
+          "title": "CraftArts：硬件开发生产线，重塑工业软件协同模式和开发体验",
+          "quality": "neutral"
+        },
+        {
+          "page": 116,
+          "title": "分布式QingTian：系统性架构升级，打破单服务器硬件限制",
+          "quality": "neutral"
+        },
+        {
+          "page": 117,
+          "title": "昇腾AI云服务，澎湃算力支持大模型普惠",
+          "quality": "neutral"
+        },
+        {
+          "page": 118,
+          "title": "融合数字技术和电力电子技术，发展清洁能源与能源数字化，推动能源革命，共建绿色美好未来",
+          "quality": "strong"
+        },
+        {
+          "page": 119,
+          "title": "工商业",
+          "quality": "weak"
+        },
+        {
+          "page": 120,
+          "title": "数据中心能源：构筑绿色可靠算力底座，让数字世界坚定运行",
+          "quality": "neutral"
+        },
+        {
+          "page": 121,
+          "title": "光场屏",
+          "quality": "weak"
+        },
+        {
+          "page": 122,
+          "title": "公司战略",
+          "quality": "weak"
+        },
+        {
+          "page": 124,
+          "title": "全球高校开展广泛的技术合作，促进技术不断创新",
+          "quality": "strong"
+        },
+        {
+          "page": 125,
+          "title": "开放、合作、共赢，加速生态发展，推动产业繁荣",
+          "quality": "strong"
+        },
+        {
+          "page": 126,
+          "title": "粘结世界智慧，培育青年才俊，攻克产业难题，共建学术社区",
+          "quality": "neutral"
+        },
+        {
+          "page": 127,
+          "title": "积极推动ICT基础设施、智能终端、智能驾驶等软硬件的标准与生态",
+          "quality": "strong"
+        },
+        {
+          "page": 128,
+          "title": "开源的坚定支持者和重要贡献者",
+          "quality": "neutral"
+        },
+        {
+          "page": 129,
+          "title": "激发生态创新，加大技术赋能，助力生态价值创造",
+          "quality": "neutral"
+        },
+        {
+          "page": 130,
+          "title": "沉淀优秀经验，以能力为核心发展伙伴，让开发者成为决定性力量",
+          "quality": "strong"
+        },
+        {
+          "page": 131,
+          "title": "高质量意味着低成本，以质取胜是华为坚定不移的核心战略选择",
+          "quality": "strong"
+        },
+        {
+          "page": 132,
+          "title": "深耕数字化，“平台+服务”实现多业态下业务能力共享，在追求客户满意的同时，追求效率效益提升",
+          "quality": "strong"
+        },
+        {
+          "page": 133,
+          "title": "华为聚焦可持续发展四大战略，创造社会价值",
+          "quality": "neutral"
+        },
+        {
+          "page": 134,
+          "title": "行胜于言，携手构建可持续发展的美好未来",
+          "quality": "strong"
+        },
+        {
+          "page": 135,
+          "title": "TECH4ALL：华为面向数字包容领域的倡议和长期行动计划",
+          "quality": "neutral"
+        },
+        {
+          "page": 136,
+          "title": "公平优质教育：Open Schools提升多国基础教育学习韧性和连续性",
+          "quality": "strong"
+        },
+        {
+          "page": 137,
+          "title": "公平优质教育：科技小学堂激发中国乡村学生好奇心及提升科技素养",
+          "quality": "strong"
+        },
+        {
+          "page": 138,
+          "title": "保护脆弱环境：促进生物多样性保护，助力自然资源可持续管理",
+          "quality": "strong"
+        },
+        {
+          "page": 139,
+          "title": "保护脆弱环境：守护鸟中国宝--东方白鹳",
+          "quality": "neutral"
+        },
+        {
+          "page": 140,
+          "title": "促进健康福祉：“鹤颜课堂” 让老年群体更好享受数字生活",
+          "quality": "strong"
+        },
+        {
+          "page": 141,
+          "title": "网络安全与隐私保护是华为公司的最高纲领",
+          "quality": "strong"
+        },
+        {
+          "page": 142,
+          "title": "华为端到端网络安全保障体系覆盖了所有的部门和人员",
+          "quality": "strong"
+        },
+        {
+          "page": 143,
+          "title": "尊重和保护隐私，依法合规，满足客户、消费者和雇员的隐私期望",
+          "quality": "neutral"
+        },
+        {
+          "page": 144,
+          "title": "践行节能减排的创新和实践，加速行业低碳化转型",
+          "quality": "neutral"
+        },
+        {
+          "page": 145,
+          "title": "持续加大可再生能源使用，以创新技术推动能源革命",
+          "quality": "strong"
+        },
+        {
+          "page": 146,
+          "title": "供应责任：实施全供应链尽责管理，持续提升供应链韧性",
+          "quality": "strong"
+        },
+        {
+          "page": 147,
+          "title": "未来种子：为万物互联的智能世界培养数字人才",
+          "quality": "neutral"
+        },
+        {
+          "page": 148,
+          "title": "华为ICT学院：联接全球2700+所高校，为社会培养ICT人才",
+          "quality": "neutral"
+        }
+      ],
+      "summary": {
+        "passed": false,
+        "total_issues": 13,
+        "missing_count": 3,
+        "order_violations_count": 0,
+        "weak_titles_count": 9,
+        "empty_titles_count": 1,
+        "neutral_titles_count": 76,
+        "unmatched_pages_count": 146,
+        "matched_pages_count": 2,
+        "explanation": "框架模板: 月度/季度经营例会材料\n检查模式: 仅阶段覆盖\n\n缺失阶段 (3 个):\n  - [0] 仪表盘 / 核心KPI实绩 (dashboard)\n  - [0] 红绿灯 / 偏差 / 预警信号 (variance_signal)\n  - [0] 行动项（owner + due date + 验收） (action_items)\n\n空标题 (1 页):\n  - 第149页: 标题为空\n\n弱标题 (9 个, 建议优化):\n  - 第8页: 标题过短且无关键信息: \"华为云\"\n  - 第17页: 标题过短 (1 字符): \"×\"\n  - 第29页: 标题过短且无关键信息: \"公司战略\"\n  ... 共 9 个弱标题\n\n未匹配页面 (146 页):\n  - 第1页: \"内容框架\" (neutral)\n  - 第2页: \"华为是全球领先的ICT基础设施和智能终端提供商\" (strong)\n  - 第3页: \"聚焦ICT技术，面向三类客户，携手生态及伙伴提供产品解决方案和服务\" (strong)\n  - 第4页: \"4,175 亿人民币\" (neutral)\n  - 第5页: \"保持强研发投入，以创新为客户和社会创造更多价值\" (neutral)\n\n有效匹配: 2 页\n描述性标题: 76 个 (不扣分)"
+      }
+    }
+  },
+  "conclusion": "质量等级: 需修复  |  共 149 页  |  ERROR 1  CRITICAL 191  WARNING 221\n\n========================================\n[阻断] 以下问题必须修复:\n  空页: 1 处\n    - 第149页: 页面几乎无实质内容\n\n========================================\n[严重] 文本离群 191 处（内容与页面主题极不相关）:\n  - 第1页: \"内容框架\"\n  - 第1页: \"正式使用时请删除此页\"\n  - 第5页: \"单位：元人民币\"\n  ... 已折叠 212 条\n  >>> 同类问题出现 217 次，建议检查 文本离群 的检测阈值是否合理\n\n========================================\n[警告] 建议关注:\n  内容冗余: 2 处\n    - 第?页: 页码 35 和 36 内容高度相似 (sim=0.76)\n    - 第?页: 页码 54 和 55 内容高度相似 (sim=0.94)\n  类型-内容不匹配: 1 处\n    - 第149页: \n  结构不完整: 1 处\n    - 第?页: 缺少结尾页（致谢/Q&A）\n\n[参考] 轻度文本离群 26 处（偏离较轻，仅供参考）\n\n[提示] 以下页面健康分低于50，建议重点复核:\n  第7页 (分值 25, 问题: 文本离群)\n  第9页 (分值 0, 问题: 文本离群)\n  第20页 (分值 10, 问题: 文本离群)\n  第28页 (分值 19, 问题: 文本离群)\n  第31页 (分值 40, 问题: 文本离群)",
+  "overall_passed": false,
+  "overall_reason": "内容质量: 1 个 ERROR; 框架匹配: 未通过"
+}

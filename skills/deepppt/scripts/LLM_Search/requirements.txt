@@ -1,0 +1,17 @@
+# LLM_Search 依赖
+# ==================
+# 核心依赖（必需）
+numpy>=1.24.0
+
+# 嵌入模型 — 轻量方案（推荐）
+# 使用本地 ONNX 模型 (bge-small-zh-v1.5, ~100MB)
+# 仅需 onnxruntime + tokenizers，无需 PyTorch
+onnxruntime>=1.15.0
+tokenizers>=0.15.0
+
+# 嵌入模型 — 完整方案（备选，需要网络下载模型）
+# sentence-transformers>=2.2.0
+
+# 向量存储（可选，有降级方案）
+# FAISS 提供更好的性能和可扩展性
+faiss-cpu>=1.7.4

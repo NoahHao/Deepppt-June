@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280.5" height="720" viewBox="0 0 1280.5 720"><defs><linearGradient id="ggrad1" x1="0.5" y1="1" x2="0.5" y2="0"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/><stop offset="1" stop-color="#A6A6A6" stop-opacity="0.11"/></linearGradient><linearGradient id="ggrad2" x1="0.5" y1="1" x2="0.5" y2="0"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/><stop offset="1" stop-color="#A6A6A6" stop-opacity="0.11"/></linearGradient><linearGradient id="ggrad3" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="1" stop-color="#A3A3A3" stop-opacity="0"/><stop offset="0.33" stop-color="#A3A3A3" stop-opacity="0.1"/></linearGradient><linearGradient id="ggrad4" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="1" stop-color="#A3A3A3" stop-opacity="0.1"/><stop offset="0" stop-color="#A3A3A3" stop-opacity="0"/></linearGradient><linearGradient id="ggrad5" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="1" stop-color="#A3A3A3" stop-opacity="0.2"/><stop offset="0" stop-color="#F2F2F2" stop-opacity="0"/></linearGradient></defs><g id="shape-67" data-name="副标题 1">
+<rect x="78.43" y="51.88" width="868.2" height="45.24" fill="none"/>
+<text x="79.23" y="88.37" text-anchor="start" xml:space="preserve" font-family="Arial, &quot;微软雅黑&quot;, sans-serif" font-size="37.33" fill="#373737"><tspan fill="#373737" font-size="37.33">保持强研发投入，以创新为客户和社会创造更多价值</tspan></text>
+</g>
+<g id="shape-68" data-name="PA-椭圆 531" transform="rotate(180 1063.89 334.1) translate(1063.89 334.1) scale(-1 1) translate(-1063.89 -334.1)">
+<ellipse cx="1063.89" cy="334.1" rx="143.35" ry="25.09" fill="url(#ggrad1)" stroke-width="0.667" stroke-linecap="butt" stroke="#FFFFFF" stroke-opacity="0" stroke-linejoin="round"/>
+</g>
+<g id="shape-69" data-name="PA-椭圆 531" transform="rotate(180 1063.89 536.88) translate(1063.89 536.88) scale(-1 1) translate(-1063.89 -536.88)">
+<ellipse cx="1063.89" cy="536.88" rx="143.35" ry="25.09" fill="url(#ggrad2)" stroke-width="0.667" stroke-linecap="butt" stroke="#FFFFFF" stroke-opacity="0" stroke-linejoin="round"/>
+</g>
+<g id="shape-71" data-name="矩形 70">
+<rect x="73.33" y="237.48" width="696.8" height="394.88" fill="url(#ggrad3)" stroke-width="0.667" stroke="#C2C2C2"/>
+</g>
+<g id="shape-72" data-name="矩形 71">
+<rect x="92.99" y="271.46" width="101.41" height="16.16" fill="none" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter"/>
+<text x="194.4" y="284.2" text-anchor="end" xml:space="preserve" font-family="Arial, &quot;微软雅黑&quot;, sans-serif" font-size="13.33" fill="#373737"><tspan fill="#373737" font-size="13.33">单位：元人民币</tspan></text>
+</g>
+<g id="shape-73" data-name="文本框 72">
+<rect x="299.22" y="256.78" width="245.04" height="22.62" fill="none"/>
+<text x="299.22" y="272.65" text-anchor="start" xml:space="preserve" font-family="Arial, &quot;微软雅黑&quot;, sans-serif" font-size="18.67" fill="#373737" font-weight="bold"><tspan fill="#373737" font-size="18.67" font-weight="bold">华为投资控股近十年研发投入</tspan></text>
+</g>
+<g id="shape-138" data-name="组合 137">
+<g id="shape-139" data-name="文本框 138">
+<rect x="573.54" y="148.08" width="165.64" height="67.86" fill="none"/>
+<text x="656.35" y="185.74" text-anchor="middle" xml:space="preserve" font-family="Arial, &quot;微软雅黑&quot;, sans-serif" font-size="37.33" fill="#C8000B" font-weight="bold"><tspan fill="#C8000B" font-size="37.33" font-weight="bold">11</tspan><tspan fill="#C8000B" font-size="37.33" font-weight="bold">,100</tspan><tspan fill="#C8000B" font-size="32" font-weight="bold"> </tspan><tspan fill="#C8000B" font-size="18.67">亿</tspan></text>
+<text x="656.35" y="207.21" text-anchor="middle" xml:space="preserve" font-family="Arial, &quot;微软雅黑&quot;, sans-serif" font-size="18.67" fill="#1D1D1A"><tspan fill="#1D1D1A" font-size="18.67">近十年研发总投入</tspan></text>
+</g>
+<g id="shape-140" data-name="文本框 139">
+<rect x="99.4" y="148.08" width="177.9" height="67.86" fill="none"/>
+<text x="188.35" y="185.74" text-anchor="middle" xml:space="preserve" font-family="Arial, &quot;微软雅黑&quot;, sans-serif" font-size="37.33" fill="#C8000B" font-weight="bold"><tspan fill="#C8000B" font-size="37.33" font-weight="bold">1,647</tspan><tspan fill="#C8000B" font-size="32" font-weight="bold"> </tspan><tspan fill="#C00000" font-size="18.67">亿</tspan></text>
+<text x="188.35" y="207.21" text-anchor="middle" xml:space="preserve" font-family="Arial, &quot;微软雅黑&quot;, sans-serif" font-size="18.67" fill="#1D1D1A"><tspan fill="#1D1D1A" font-size="18.67">2023</tspan><tspan fill="#1D1D1A" font-size="18.67">年研发投入</tspan></text>
+</g>
+<g id="shape-141" data-name="文本框 140">
+<rect x="340.16" y="148.08" width="170.52" height="67.86" fill="none"/>
+<text x="425.42" y="185.74" text-anchor="middle" xml:space="preserve" font-family="Arial, &quot;微软雅黑&quot;, sans-serif" font-size="37.33" fill="#C8000B" font-weight="bold"><tspan fill="#C8000B" font-size="37.33" font-weight="bold">23.4%</tspan></text>
+<text x="425.42" y="207.21" text-anchor="middle" xml:space="preserve" font-family="Arial, &quot;微软雅黑&quot;, sans-serif" font-size="18.67" fill="#1D1D1A"><tspan fill="#1D1D1A" font-size="18.67">2023</tspan><tspan fill="#1D1D1A" font-size="18.67">年研发费用率</tspan></text>
+</g>
+</g>
+<g id="shape-142" data-name="TextBox 592">
+<rect x="1011.47" y="241.89" width="101.82" height="45.24" fill="none"/>
+<text x="1062.38" y="277.57" text-anchor="middle" xml:space="preserve" font-family="Arial, &quot;微软雅黑&quot;, sans-serif" font-size="37.33" fill="#C7000B" font-weight="bold"><tspan fill="#C7000B" font-size="37.33" font-weight="bold">14</tspan><tspan fill="#C7000B" font-size="37.33" font-weight="bold">万</tspan><tspan fill="#C7000B" font-size="37.33">+</tspan></text>
+</g>
+<g id="shape-143" data-name="TextBox 592">
+<rect x="1013.16" y="422.06" width="98.45" height="45.24" fill="none"/>
+<text x="1062.38" y="454.01" text-anchor="middle" xml:space="preserve" font-family="&quot;微软雅黑&quot;, Arial, sans-serif" font-size="37.33" fill="#C7000B" font-weight="bold"><tspan fill="#C7000B" font-size="37.33" font-weight="bold">200+</tspan></text>
+</g>
+<g id="shape-144" data-name="矩形 143">
+<rect x="949.56" y="474.45" width="225.66" height="67.86" fill="none" stroke="none"/>
+<text x="1062.38" y="490.32" text-anchor="middle" xml:space="preserve" font-family="&quot;微软雅黑&quot;, Arial, sans-serif" font-size="18.67" fill="#373737"><tspan fill="#373737" font-size="18.67">与行业主要权利人签署的</tspan></text>
+<text x="1062.38" y="512.72" text-anchor="middle" xml:space="preserve" font-family="&quot;微软雅黑&quot;, Arial, sans-serif" font-size="18.67" fill="#373737"><tspan fill="#373737" font-size="18.67">专利（交叉）许可协议数量</tspan></text>
+<text x="1062.38" y="535.12" text-anchor="middle" xml:space="preserve" font-family="Arial, &quot;微软雅黑&quot;, sans-serif" font-size="18.67" fill="#4D4D4D"><tspan fill="#4D4D4D" font-size="18.67">（截至</tspan><tspan fill="#4D4D4D" font-size="18.67">2023</tspan><tspan fill="#4D4D4D" font-size="18.67">年底）</tspan></text>
+</g>
+<g id="shape-145" data-name="矩形 100">
+<rect x="945.3" y="297.95" width="235.8" height="45.24" fill="none" stroke="none"/>
+<text x="1063.2" y="313.82" text-anchor="middle" xml:space="preserve" font-family="Arial, &quot;微软雅黑&quot;, sans-serif" font-size="18.67" fill="#4D4D4D"><tspan fill="#4D4D4D" font-size="18.67">全球持有有效授权专利数量</tspan></text>
+<text x="1063.2" y="336.22" text-anchor="middle" xml:space="preserve" font-family="Arial, &quot;微软雅黑&quot;, sans-serif" font-size="18.67" fill="#4D4D4D"><tspan fill="#4D4D4D" font-size="18.67">（截至</tspan><tspan fill="#4D4D4D" font-size="18.67">2023</tspan><tspan fill="#4D4D4D" font-size="18.67">年底）</tspan></text>
+</g>
+<g id="shape-152" data-name="Picture 19" transform="rotate(90 837.95 379.17)">
+<image href="../assets/image5.png" x="588.97" y="306.97" width="497.95" height="144.4" preserveAspectRatio="none"/>
+</g>
+<g id="shape-153" data-name="直接连接符 152">
+<line x1="307.67" y1="164.92" x2="307.67" y2="202.72" stroke="#4D4D4D" fill="#E9002F" stroke-width="1"/>
+</g>
+<g id="shape-154" data-name="直接连接符 153">
+<line x1="540.37" y1="164.13" x2="540.37" y2="201.93" stroke="#4D4D4D" fill="#E9002F" stroke-width="1"/>
+</g>
+<g id="shape-156" data-name="文本框 155">
+<rect x="344.03" y="612.29" width="400.45" height="14.54" fill="none"/>
+<text x="744.48" y="622.49" text-anchor="end" xml:space="preserve" font-family="&quot;微软雅黑&quot;, Arial, sans-serif" font-size="12" fill="#373737" font-style="italic"><tspan fill="#373737" font-size="12" font-style="italic">来源</tspan><tspan fill="#373737" font-size="12" font-style="italic">：</tspan><tspan fill="#373737" font-size="12" font-style="italic">《</tspan><tspan fill="#373737" font-size="12" font-style="italic">华为投资控股有限公司 </tspan><tspan fill="#373737" font-size="12" font-style="italic">2023</tspan><tspan fill="#373737" font-size="12" font-style="italic">年年度报告</tspan><tspan fill="#373737" font-size="12" font-style="italic">》</tspan></text>
+</g>
+<g id="shape-29" data-name="图表 28">
+<rect x="84.31" y="293.57" width="671.05" height="303.6" fill="none" stroke="#999999" stroke-dasharray="4 4"/><text x="419.84" y="445.37" text-anchor="middle" font-size="14" fill="#999999">[chart]</text>
+</g>
+<g id="shape-25" data-name="组合 24">
+<g id="shape-26" data-name="梯形 25">
+<polygon points="123.08,187.85 720.03,187.85 765.15,226.33 77.96,226.33" fill="url(#ggrad4)" stroke-width="0.333" stroke="#A3A3A3" stroke-opacity="0.15"/>
+</g>
+<g id="shape-27" data-name="梯形 26">
+<polygon points="113.89,187.85 729.23,187.85 770.13,222.91 72.98,222.91" fill="url(#ggrad5)" stroke-width="0.333" stroke="#A3A3A3" stroke-opacity="0.3"/>
+</g>
+</g></svg>

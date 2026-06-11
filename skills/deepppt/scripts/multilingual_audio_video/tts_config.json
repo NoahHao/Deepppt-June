@@ -1,0 +1,67 @@
+{
+  "_comment": "TTS configuration for multilingual audio generation. Provider defaults are used if not specified.",
+  
+  "default_provider": "edge",
+  
+  "providers": {
+    "edge": {
+      "_comment": "Microsoft Edge TTS (free, no API key required). Voice ShortNames: use --list-voices --locale <locale> to discover.",
+      "voice_defaults": {
+        "zh-CN": "zh-CN-YunjianNeural",
+        "en-US": "en-US-JennyNeural",
+        "ja-JP": "ja-JP-NanamiNeural",
+        "ko-KR": "ko-KR-SunHiNeural",
+        "zh-TW": "zh-TW-HsiaoChenNeural",
+        "zh-HK": "zh-HK-HiuGaaiNeural",
+        "en-GB": "en-GB-SoniaNeural",
+        "fr-FR": "fr-FR-DeniseNeural",
+        "de-DE": "de-DE-KatjaNeural"
+      },
+      "rate": "+0%"
+    },
+    
+    "elevenlabs": {
+      "_comment": "ElevenLabs — high-quality cloud TTS. Requires ELEVENLABS_API_KEY in .env or environment.",
+      "model": "eleven_multilingual_v2",
+      "output_format": "mp3_44100_128",
+      "stability": null,
+      "similarity_boost": null,
+      "style": null,
+      "speaker_boost": null,
+      "voice_id": null
+    },
+    
+    "minimax": {
+      "_comment": "MiniMax — cloud TTS. Requires MINIMAX_API_KEY. China endpoint default; set MINIMAX_TTS_BASE_URL for overseas.",
+      "model": "speech-2.8-hd",
+      "output_format": "mp3",
+      "sample_rate": 32000,
+      "bitrate": 128000,
+      "channel": 1,
+      "speed": 1.0,
+      "volume": 1.0,
+      "pitch": 0,
+      "language_boost": "auto",
+      "voice_id": null
+    },
+    
+    "qwen": {
+      "_comment": "Qwen TTS (DashScope). Requires QWEN_API_KEY or DASHSCOPE_API_KEY.",
+      "model": "qwen3-tts-flash",
+      "language_type": "Chinese",
+      "instructions": null,
+      "voice_id": null
+    },
+    
+    "cosyvoice": {
+      "_comment": "CosyVoice (DashScope). Requires COSYVOICE_API_KEY or DASHSCOPE_API_KEY.",
+      "model": "cosyvoice-v3-flash",
+      "output_format": "mp3",
+      "sample_rate": 24000,
+      "volume": null,
+      "rate": null,
+      "pitch": null,
+      "voice_id": null
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "sources": [
+    {
+      "name": "GetSampleFiles",
+      "url": "https://getsamplefiles.com/sample-document-files/pptx",
+      "enabled": true
+    }
+  ]
+}

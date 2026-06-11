@@ -1,0 +1,13 @@
+{
+  "_comment": "Local TTS voice configuration. Add your cloned voices here.",
+  "backend": "coqui_xtts",
+  "device": "cpu",
+  "default_voice": "default",
+  "voices": {
+    "default": {
+      "model": "tts_models/multilingual/multi-dataset/xtts_v2",
+      "reference_audio": "reference_audio/default.wav",
+      "language": "zh"
+    }
+  }
+}

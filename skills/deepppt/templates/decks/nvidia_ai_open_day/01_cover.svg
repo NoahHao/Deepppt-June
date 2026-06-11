@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect width="1280" height="720" fill="#000000"/>
+  <rect x="0" y="280" width="1280" height="3" fill="#76B900"/>
+  <rect x="0" y="283" width="120" height="3" fill="#76B900" opacity="0.5"/>
+  <text x="640" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#FFFFFF">{{TITLE}}</text>
+  <text x="640" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#76B900">{{SUBTITLE}}</text>
+  <text x="640" y="400" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#888888">NVIDIA AI Open Day</text>
+  <rect x="560" y="380" width="160" height="1" fill="#76B900" opacity="0.3"/>
+</svg>

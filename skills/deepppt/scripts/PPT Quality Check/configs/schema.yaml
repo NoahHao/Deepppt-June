@@ -1,0 +1,46 @@
+# ============================================================
+# schema: story_gate_template v1.0
+# 每一份配置文件 = 一种材料类型的"逻辑骨架"
+# ============================================================
+
+meta:
+  id: string              # 模板唯一标识，如 "product_pitch"
+  name: string             # 显示名，如 "产品推介（病·药·效）"
+  description: string      # 一段话说明适用场景
+  source: string           # 逻辑来源标记，如 "MBB-SCQA / generic"
+  version: "1.0"
+  created: "2026-06-11"
+
+# ---------- 全局校验策略 ----------
+gate_policy:
+  strict_order: true       # true = 阶段顺序大致要递增；false = 允许乱序（如附录型）
+  allow_skipped_stages: false  # 非 required 的 stage 可以完全没有
+  max_unmatched_pages: 2       # 允许最多 N 页"匹配不到任何阶段"不报错（如封面/目录/分隔页）
+  title_extraction:
+    prefer_placeholder: true   # 优先取 pptx 的 title placeholder
+    fallback_top_textbox: true # 找不到标题占位符时，取页面最大字号文本框
+    strip_page_prefix: true    # 去掉 "01 | "、"Chapter 1:" 这类前缀
+
+# ---------- 每个阶段的定义 ----------
+stages:
+  - id: string
+    label: string                # 给人看的名字
+    role: enum                   # 阶段角色: context | complication | answer | evidence | action | appendix
+    keywords: [string]           # 关键词（中文+英文都可，用于轻量匹配）
+    synonyms: [string]           # 同义扩展，如 ["痛点","挑战","问题","困境"]
+    required: true/false
+    order: int                   # 期望出现的顺序（1,2,3...）
+    min_pages: 1                 # 该阶段至少占几页
+    max_pages: 3                 # 该阶段至多占几页（防注水）
+    allow_merge_with_next: false  # 是否允许与前一阶段合并在一页（如小材料）
+    must_precede: []             # 硬性前置，如 ["context"] — 该阶段出现前必须先看到 context
+    quality_hints:               # 给用户的改进建议
+      expected_slide_types: [string]  # 如 ["data_chart", "case_card", "comparison_table"]
+      anti_patterns: [string]        # 如 ["纯图片无标题", "标题仍是默认文字"]
+
+# ---------- 最终输出：校验失败时的消息模板 ----------
+violations:
+  missing_required_stage: "❌ 缺失关键环节【{label}】：标题中未检测到相关内容（建议关键词：{keywords}），逻辑链不完整。"
+  order_reversed: "⚠️ 页面顺序异常：检测到【{earlier}】出现在【{later}】（期望顺序 {order_earlier}<{order_later}），请确认是否放错章节。"
+  too_many_unmatched: "⚠️ 有 {n} 页标题未能归类（可能是封面/目录/分隔页，也可能是内容偏离主题），建议人工复核：{pages}"
+  weak_action_titles: "💡 以下页面标题偏描述性而非结论性，建议改写为『断言句』：{pages}"

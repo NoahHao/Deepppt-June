@@ -1,0 +1,61 @@
+meta:
+  id: project_initiation
+  name: "立项汇报 / 年度项目启动"
+  description: "适用：内部立项、预算审批、PMO汇报。核心弧线=回顾有据→差距驱动→计划可验→要钱要人"
+  source: "corporate-storyline"
+  version: "1.0"
+
+gate_policy:
+  strict_order: true
+  allow_skipped_stages: false
+  max_unmatched_pages: 2
+
+stages:
+  - id: review_last
+    label: "回顾：去年做了什么"
+    role: context
+    keywords: [去年, 回顾, 已完成, 进展, 里程碑, 交付物, 背景]
+    required: true
+    order: 1
+    min_pages: 1
+    max_pages: 2
+
+  - id: result_last
+    label: "回顾：取得什么效果（数据/指标）"
+    role: evidence
+    keywords: [效果, 成效, 指标, KPI, 达成率, 产出, 收益, 节省, 提升]
+    required: true
+    order: 2
+    min_pages: 1
+    max_pages: 2
+    must_precede: [review_last]
+
+  - id: gap_why
+    label: "差距与必要性：为什么今年还要做/要做更多"
+    role: complication
+    keywords: [差距, 不足, 未解决, 新的需求, 变化, 竞争, 合规, 必要性, 原因, 驱动]
+    synonyms: [痛点延续, 新挑战, gap, why_now]
+    required: true
+    order: 3
+    min_pages: 1
+    max_pages: 2
+
+  - id: plan_this
+    label: "今年计划：做什么、怎么做、做到什么程度算赢"
+    role: answer
+    keywords: [计划, 规划, 目标, 范围, 里程碑, 交付物, 验收标准, 成功标准, 今年]
+    required: true
+    order: 4
+    min_pages: 1
+    max_pages: 4
+    must_precede: [gap_why]
+
+  - id: resource_ask
+    label: "资源请求 / 预算 / 人员 / 风险"
+    role: action
+    keywords: [预算, 费用, 人员, 资源, 风险, 缓解, 审批, 需要]
+    required: true
+    order: 5
+    min_pages: 1
+    max_pages: 2
+    must_precede: [plan_this]

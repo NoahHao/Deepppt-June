@@ -1,0 +1,66 @@
+meta:
+  id: strategy_proposal
+  name: "战略建议 / 经营分析汇报"
+  description: "适用：给CXO的策略deck、业务转型建议、年度经营复盘+方向校准。标准 S→C→Q→A 结构"
+  source: "McKinsey-SCQA / Pyramid-Principle"
+  version: "1.0"
+
+gate_policy:
+  strict_order: true
+  allow_skipped_stages: false
+  max_unmatched_pages: 3
+
+stages:
+  - id: exec_summary
+    label: "执行摘要（结论先行）"
+    role: answer
+    keywords: [摘要, 核心结论, 建议, 一句话, 总览, TL;DR, 核心观点]
+    required: true
+    order: 1
+    min_pages: 1
+    max_pages: 1
+
+  - id: situation
+    label: "S：现状 / 事实基线"
+    role: context
+    keywords: [现状, 市场, 行业, 基线, 表现, 位置, 我们目前, 成绩]
+    required: true
+    order: 2
+    min_pages: 1
+    max_pages: 2
+
+  - id: complication
+    label: "C：挑战 / 变化 / 为什么不能再维持现状"
+    role: complication
+    keywords: [挑战, 下滑, 竞争, 流失, 成本, 风险, 威胁, 拐点, 不可持续, 压力]
+    required: true
+    order: 3
+    min_pages: 1
+    max_pages: 2
+
+  - id: question
+    label: "Q：核心决策问题（我们要回答什么）"
+    role: context
+    keywords: [问题, 决策, 选择, 方向, 核心议题, 关键问题是, 摆在面前的是]
+    required: false
+    order: 4
+    min_pages: 0
+    max_pages: 1
+
+  - id: answer_section
+    label: "A：推荐方向 + 支撑论证（分2-3个支柱）"
+    role: answer
+    keywords: [推荐, 应, 方向, 战略, 选项对比, 选择理由, 支柱, 路径]
+    required: true
+    order: 5
+    min_pages: 2
+    max_pages: 8
+
+  - id: roadmap
+    label: "路线图 / 下一步 / 里程碑"
+    role: action
+    keywords: [路线图, 下一步, 实施, 里程碑, 时间线, 负责人, 分阶段]
+    required: true
+    order: 6
+    min_pages: 1
+    max_pages: 2

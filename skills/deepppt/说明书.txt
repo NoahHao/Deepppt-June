@@ -1,0 +1,35 @@
+一、deepppt-main 完整功能分析
+整个 deepppt-main 是一个 v2.9.0 的开源 PPT 生成引擎（MIT 许可），核心理念是「工具链完整，模型决定上限」。以下按使用场景分类说明：
+
+1. 核心 PPT 生成流水线（7 步串行）
+源文档 → 结构化 → 设计规划 → 视觉生成 → 质量检查 → 后处理 → 导出
+步骤	脚本/模块	做什么
+① 源处理	source_to_md/pdf_to_md.py / doc_to_md.py / web_to_md.py	PDF/DOCX/URL/PPTX → Markdown（支持矢量图提取、表格保留）
+② 项目初始化	project_manager.py init	创建标准项目目录（sources/images/svg_output/exports/…）
+③ 策略师	references/strategist.md + AI	八大确认：颜色/字体/图标/图片/布局/品牌/动画/受众
+④ 图片获取	image_gen.py (15个后端) / image_search.py (4个源)	AI生图（DALL-E/Gemini/Stability…）或网页搜图（Pexels/Unsplash…）
+⑤ 执行者	references/executor-base.md + AI	逐页手写 SVG，遵循 shared-standards.md 技术规范
+⑥ 后处理	finalize_svg.py → svg_finalize/	图标内联、图片嵌入、宽高比修正、tspan 展平
+⑦ 导出	svg_to_pptx.py	SVG → PPTX（可编辑的 PowerPoint 原生形状）
+2. 辅助功能模块
+功能	脚本	触发方式
+KB 知识库搜索	kb_search.py + config/kb_paths.json	/kb-search 命令
+网页 PPT 爬虫	web_ppt_crawler.py	从华为/IDC 等网站自动下载 PPTX
+Live 预览编辑器	svg_editor/server.py	PPT 生成后自动启动 localhost:5050
+协作共享	svg_editor/share.py + server.py --share	--share --token xxx 模式
+语音旁白	notes_to_audio.py + 6个TTS后端	演讲备注 → MP3
+#多语言音视频 增加对音视频场景的输出类型，输出校验。  多音色训练，导入依赖付费及网络环境。
+PPTX 解析	pptx_to_svg/	将 PPTX 模板转为 SVG 分析
+动画定制	pptx_animations.py	对象级 PPTX 动画（淡入/飞入/擦除…）
+视觉审查	visual_review.py	逐页自检尺寸/颜色/字体
+LaTeX 公式	latex_render.py	数学公式渲染
+PPTX 模板库	templates/decks/	11套品牌全套（华为/IDC/NVIDIA/招行/中电信…）
+SVG 图标库	templates/icons/	11,600+ SVG 图标（Tabler/Phosphor/Simple Icons…）
+
+## 协同批注 该功能当前仅在本地进行测试，简化流程未进行安全加固，正式使用时注意加固调整。 ip+ token分享 →  团队编辑→  审核通过 →  执行修改。
+
+3. 三种使用模式
+模式	说明
+全自动	给一个 PDF/URL/主题 → 一条命令生成完整 PPTX
+半自动	执行者在生成每页前等待用户确认，可随时修改
+模板模式	指定 templates/decks/ 下的品牌模板作为起点

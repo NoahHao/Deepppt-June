@@ -1,0 +1,8 @@
+{
+  "kb_paths": [
+    "knowledge_base",
+    "knowledge_base/customer_cases",
+    "knowledge_base/product_intro",
+    "knowledge_base/solution_intro"
+  ]
+}

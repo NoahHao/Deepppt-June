@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <!-- Background -->
+  <rect x="0" y="0" width="960" height="540" fill="#FFFFFF"/>
+
+  <!-- Header group -->
+  <g id="kpi-header">
+    <!-- Blue accent bar -->
+    <rect x="40" y="32" width="4" height="28" rx="2" fill="#0066CC"/>
+    <!-- Page title -->
+    <text x="56" y="55" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="bold" fill="#1A1A1A">
+      {{PAGE_TITLE}}
+    </text>
+    <!-- Underline -->
+    <line x1="40" y1="76" x2="920" y2="76" stroke="#E0E0E0" stroke-width="1"/>
+  </g>
+
+  <!-- KPI Cards placeholder -->
+  <g id="kpi-content">
+    <text x="480" y="300" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" fill="#CBD5E1">
+      {{CONTENT_AREA}}
+    </text>
+    <rect x="180" y="260" width="600" height="60" rx="4" fill="none" stroke="#E0E0E0" stroke-width="1" stroke-dasharray="4,4"/>
+  </g>
+
+  <!-- Footer -->
+  <g id="kpi-footer">
+    <line x1="40" y1="500" x2="920" y2="500" stroke="#E0E0E0" stroke-width="1"/>
+    <text x="56" y="522" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12" fill="#999999">
+      {{SECTION_NAME}}
+    </text>
+    <text x="900" y="522" text-anchor="end" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12" fill="#999999">
+      {{PAGE_NUM}}
+    </text>
+  </g>
+</svg>

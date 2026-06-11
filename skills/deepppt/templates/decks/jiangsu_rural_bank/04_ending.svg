@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <defs>
+    <linearGradient id="endingBlueGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0066CC"/>
+      <stop offset="100%" stop-color="#004D99"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="960" height="540" fill="#FFFFFF"/>
+
+  <!-- Blue top band -->
+  <rect x="0" y="0" width="960" height="6" fill="#0066CC"/>
+
+  <!-- Decorative: abstract line art building silhouette -->
+  <g id="ending-decoration">
+    <!-- Tall building left -->
+    <rect x="250" y="180" width="40" height="220" fill="#0066CC" fill-opacity="0.08"/>
+    <rect x="260" y="160" width="20" height="20" fill="#0066CC" fill-opacity="0.08"/>
+    <!-- Medium building center -->
+    <rect x="420" y="230" width="50" height="170" fill="#0066CC" fill-opacity="0.08"/>
+    <rect x="425" y="200" width="12" height="30" fill="#0066CC" fill-opacity="0.08"/>
+    <!-- Short building center-right -->
+    <rect x="530" y="280" width="35" height="120" fill="#0066CC" fill-opacity="0.08"/>
+    <!-- Tall building right -->
+    <rect x="640" y="160" width="45" height="240" fill="#0066CC" fill-opacity="0.08"/>
+    <rect x="650" y="130" width="25" height="30" fill="#0066CC" fill-opacity="0.08"/>
+    <!-- Ground line -->
+    <line x1="180" y1="400" x2="780" y2="400" stroke="#0066CC" stroke-width="1" stroke-opacity="0.15"/>
+  </g>
+
+  <!-- Thank you message -->
+  <g id="ending-thanks-group">
+    <text x="480" y="460" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="32" font-weight="bold" fill="#1A1A1A">
+      {{THANK_YOU}}
+    </text>
+  </g>
+
+  <!-- Subtitle -->
+  <g id="ending-subtitle-group">
+    <text x="480" y="495" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" fill="#999999">
+      {{ENDING_SUBTITLE}}
+    </text>
+  </g>
+
+  <!-- Contact info -->
+  <g id="ending-contact-group">
+    <text x="480" y="525" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13" fill="#BBBBBB">
+      {{CONTACT_INFO}}
+    </text>
+  </g>
+
+  <!-- Bottom decorative bar -->
+  <rect x="0" y="534" width="960" height="6" fill="#0066CC"/>
+</svg>

@@ -1,0 +1,63 @@
+meta:
+  id: investment_review
+  name: "投资/收购/重大项目投委材料"
+  description: "适用：投委会、董事会决议材料。必须以『决策』为中心组织故事，不是信息罗列。"
+  source: "MBB-deal-review"
+  version: "1.0"
+
+gate_policy:
+  strict_order: true
+  allow_skipped_stages: false
+  max_unmatched_pages: 2
+
+stages:
+  - id: exec_summary
+    label: "结论先行：推荐动作 + 关键条款/金额"
+    role: answer
+    keywords: [推荐, 建议, 决议, 收购, 投资, 估值, 金额, 交易, 核心结论]
+    required: true
+    order: 1
+    min_pages: 1
+    max_pages: 1
+
+  - id: target_context
+    label: "标的概况 / 行业地位 / 为什么是它"
+    role: context
+    keywords: [标的, 概况, 业务模式, 产品, 客户, 市场份额, 定位, 为什么选]
+    required: true
+    order: 2
+
+  - id: opportunity
+    label: "机会与战略契合"
+    role: answer
+    keywords: [机会, 协同, 战略契合, 增长, 赛道, TAM, SAM, 为什么值得]
+    required: true
+    order: 3
+
+  - id: diligence
+    label: "尽调关键发现（财务/法务/商业三件套缩略）"
+    role: evidence
+    keywords: [尽调, 财务, 法务, 合规, 质量, 发现, 风险, 负债, 隐患]
+    required: true
+    order: 4
+
+  - id: valuation_terms
+    label: "估值 / 价格 / 交易结构 / 融资"
+    role: evidence
+    keywords: [估值, 倍数, DCF, 对价, 交易结构, 融资, 支付, 条款]
+    required: true
+    order: 5
+
+  - id: risk_mitigation
+    label: "风险清单 + 缓解路径"
+    role: complication
+    keywords: [风险, 缓解, 尾部, 下行, 最坏, 退出, hedge]
+    required: true
+    order: 6
+
+  - id: decision_ask
+    label: "本次要批的东西（Go / No-Go / 条件放行）"
+    role: action
+    keywords: [批准, 决议, Go, No-Go, 条件, 授权, 通过, 需要批准]
+    required: true
+    order: 7

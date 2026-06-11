@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PPT Master — 批注审核</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, Segoe UI, Microsoft YaHei, sans-serif; background: #f5f5f5; color: #333; }
+.header { background: #1A1A1A; color: #fff; padding: 16px 24px; display: flex; justify-content: space-between; align-items: center; }
+.header h1 { font-size: 18px; font-weight: 600; }
+.header .badge { background: #D33941; color: #fff; padding: 4px 12px; border-radius: 12px; font-size: 13px; }
+.container { max-width: 960px; margin: 24px auto; padding: 0 16px; }
+.toolbar { display: flex; gap: 12px; margin-bottom: 16px; }
+.toolbar button { padding: 8px 20px; border: none; border-radius: 6px; cursor: pointer; font-size: 14px; font-weight: 500; }
+.btn-approve { background: #D33941; color: #fff; }
+.btn-approve:hover { background: #b92f36; }
+.btn-reject { background: #e0e0e0; color: #333; }
+.btn-reject:hover { background: #ccc; }
+.btn-refresh { background: #f0f0f0; color: #555; }
+.empty { text-align: center; padding: 80px 20px; color: #999; font-size: 16px; }
+.card { background: #fff; border-radius: 8px; margin-bottom: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); overflow: hidden; }
+.card-header { padding: 12px 16px; background: #fafafa; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
+.card-header .slide-name { font-weight: 600; font-size: 14px; }
+.card-header .time { font-size: 12px; color: #999; }
+.card-body { padding: 14px 16px; }
+.card-body .annotation { font-size: 14px; color: #555; line-height: 1.6; background: #fff3f3; border-left: 3px solid #D33941; padding: 8px 12px; border-radius: 0 4px 4px 0; margin-bottom: 8px; }
+.card-body .meta { font-size: 12px; color: #aaa; }
+.card-actions { padding: 10px 16px; border-top: 1px solid #eee; display: flex; gap: 8px; }
+.card-actions label { display: flex; align-items: center; gap: 6px; font-size: 13px; color: #666; cursor: pointer; }
+.card-actions input[type=checkbox] { transform: scale(1.2); }
+#toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); background: #333; color: #fff; padding: 10px 24px; border-radius: 8px; font-size: 14px; opacity: 0; transition: opacity 0.3s; z-index: 1000; }
+#toast.show { opacity: 1; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>📋 批注审核面板</h1>
+  <span class="badge" id="countBadge">0 条待审</span>
+</div>
+<div class="container">
+  <div class="toolbar">
+    <button class="btn-approve" onclick="batchAction('approve')">✅ 批准选中</button>
+    <button class="btn-reject" onclick="batchAction('reject')">❌ 拒绝选中</button>
+    <button class="btn-refresh" onclick="loadPending()">🔄 刷新</button>
+  </div>
+  <div id="list"></div>
+  <div id="empty" class="empty" style="display:none">🎉 没有待审核的批注</div>
+</div>
+<div id="toast"></div>
+
+<script>
+let items = [];
+const list = document.getElementById('list');
+const empty = document.getElementById('empty');
+const countBadge = document.getElementById('countBadge');
+const toast = document.getElementById('toast');
+
+// Share-mode token support
+const TOKEN = (() => { const m = location.search.match(/[?&]token=([^&]+)/); return m ? decodeURIComponent(m[1]) : ''; })();
+function apiUrl(path) { if (!TOKEN) return path; return path + (path.indexOf('?') === -1 ? '?' : '&') + 'token=' + encodeURIComponent(TOKEN); }
+
+function showToast(msg) {
+  toast.textContent = msg;
+  toast.classList.add('show');
+  setTimeout(() => toast.classList.remove('show'), 2000);
+}
+
+async function loadPending() {
+  const res = await fetch(apiUrl('/api/review/pending'));
+  const data = await res.json();
+  items = data.items || [];
+  countBadge.textContent = items.length + ' 条待审';
+  if (items.length === 0) {
+    list.innerHTML = '';
+    empty.style.display = 'block';
+    return;
+  }
+  empty.style.display = 'none';
+  list.innerHTML = items.map((item, i) => `
+    <div class="card">
+      <div class="card-header">
+        <span class="slide-name">📄 ${item.slide}</span>
+        <span class="time">${item.submitted_at}</span>
+      </div>
+      <div class="card-body">
+        <div class="annotation">${item.annotation}</div>
+        <div class="meta">元素: ${item.element_id} · ID: ${item.id}</div>
+      </div>
+      <div class="card-actions">
+        <label><input type="checkbox" class="item-check" data-id="${item.id}"> 选择此项</label>
+      </div>
+    </div>
+  `).join('');
+}
+
+async function batchAction(action) {
+  const checks = document.querySelectorAll('.item-check:checked');
+  if (checks.length === 0) {
+    showToast('请先选择要操作的批注');
+    return;
+  }
+  const ids = Array.from(checks).map(c => c.dataset.id);
+  const res = await fetch(apiUrl(`/api/review/${action}`), {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ ids })
+  });
+  const data = await res.json();
+  showToast(`${action === 'approve' ? '已批准' : '已拒绝'} ${data.applied || data.rejected} 条`);
+  loadPending();
+}
+
+loadPending();
+setInterval(loadPending, 30000);
+</script>
+</body>
+</html>

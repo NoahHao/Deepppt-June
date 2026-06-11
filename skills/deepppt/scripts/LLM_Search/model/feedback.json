@@ -1,0 +1,36 @@
+{
+  "sessions": [
+    {
+      "timestamp": "2026-06-05T11:05:02.596637",
+      "query": "绿色能源",
+      "selected": [
+        [
+          "hw_template",
+          14
+        ],
+        [
+          "hw_template",
+          9
+        ]
+      ],
+      "skipped": [
+        [
+          "hw_template",
+          1
+        ]
+      ],
+      "hp_snapshot": {
+        "title_weight": 0.6,
+        "content_weight": 0.4,
+        "vec_weight": 0.5,
+        "kw_weight": 0.3,
+        "usage_weight": 0.2
+      }
+    }
+  ],
+  "hp_title_weight": 0.6,
+  "hp_content_weight": 0.4,
+  "hp_vec_weight": 0.441,
+  "hp_kw_weight": 0.363,
+  "hp_usage_weight": 0.196
+}
