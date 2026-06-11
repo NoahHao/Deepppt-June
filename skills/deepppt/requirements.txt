@@ -112,3 +112,28 @@ google-genai>=1.0.0
 # Localhost web editor for annotating SVG elements with edit instructions.
 # 本地 Web 编辑器，用于在 SVG 元素上添加编辑标注指令
 flask>=3.0.0
+
+# ─────────────────────────────────────────────────────────────
+# YAML config parsing / YAML 配置解析
+# ─────────────────────────────────────────────────────────────
+# Used by svg_quality_checker, gate_checker, template registry, etc.
+# 供 svg_quality_checker、gate_checker、模板注册等工具使用
+PyYAML>=6.0
+
+# ─────────────────────────────────────────────────────────────
+# XML processing / XML 处理
+# ─────────────────────────────────────────────────────────────
+# Used by mirror_fill for SVG/PPTX XML manipulation.
+# 供 mirror_fill 进行 SVG/PPTX XML 操作
+lxml>=5.0
+
+# ─────────────────────────────────────────────────────────────
+# LLM_Search — local semantic search / 本地语义搜索
+# ─────────────────────────────────────────────────────────────
+# Embedding model (ONNX runtime, lightweight ~50MB)
+# 嵌入模型（ONNX 运行时，轻量约 50MB）
+onnxruntime>=1.15.0
+tokenizers>=0.15.0
+# Optional — FAISS vector index (better performance, has fallback)
+# 可选 —— FAISS 向量索引（性能更好，有降级方案）
+# faiss-cpu>=1.7.4
