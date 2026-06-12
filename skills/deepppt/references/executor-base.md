@@ -83,6 +83,20 @@ Before generating each page, output which template is used:
 
 Before the first SVG page, output a confirmation listing: canvas dimensions, body font size, color scheme (primary/secondary/accent HEX), font plan. Prevents spec/execution drift.
 
+### 2.0 SVG Root Element (HARD rule)
+
+**Every generated SVG MUST** include `width` and `height` attributes on its `<svg>` root element matching the `viewBox` dimensions. See [shared-standards.md §4](shared-standards.md):
+
+```xml
+<!-- CORRECT -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+
+<!-- WRONG — missing width/height causes preview and export failures -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+```
+
+The `width`/`height` values are always the third/fourth numbers from `viewBox`. This is NOT negotiable — every SVG page must include them. The quality checker (`svg_quality_checker.py`) will report missing width/height as an error.
+
 ### 2.1 Per-page spec_lock re-read (Mandatory)
 
 > Long decks drift off the declared palette/icons mid-deck due to context compression. `spec_lock.md` is the canonical execution reference — re-read it per page to bypass model memory.
