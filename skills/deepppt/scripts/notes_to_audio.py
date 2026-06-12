@@ -26,6 +26,7 @@ from __future__ import annotations
 import argparse
 import asyncio
 import os
+import re
 import sys
 from dataclasses import dataclass
 from pathlib import Path
@@ -60,7 +61,7 @@ def _load_tts_env_file() -> None:
 
 
 def spoken_text(markdown: str) -> str:
-    """Return narration text exactly from notes, except Markdown headings."""
+    """Return narration text with Markdown formatting stripped for TTS."""
     lines: list[str] = []
     for raw in markdown.splitlines():
         if raw.lstrip().startswith("#"):
@@ -70,6 +71,14 @@ def spoken_text(markdown: str) -> str:
             if lines and lines[-1] != "":
                 lines.append("")
             continue
+        # Strip Markdown inline formatting that TTS would pronounce literally
+        line = re.sub(r'\*\*(.+?)\*\*', r'\1', line)   # **bold**
+        line = re.sub(r'__(.+?)__', r'\1', line)       # __bold__
+        line = re.sub(r'\*(.+?)\*', r'\1', line)       # *italic*
+        line = re.sub(r'_(.+?)_', r'\1', line)         # _italic_
+        line = re.sub(r'~~(.+?)~~', r'\1', line)       # ~~strikethrough~~
+        line = re.sub(r'`(.+?)`', r'\1', line)         # `code`
+        line = re.sub(r'\[(.+?)\]\(.+?\)', r'\1', line)  # [text](url)
         lines.append(line)
     return "\n".join(lines).strip()
 
