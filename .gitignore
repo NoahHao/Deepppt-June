@@ -193,6 +193,11 @@ knowledge_base/images/
 knowledge_base/**/*.pptx
 knowledge_base/product_intro/
 knowledge_base/customer_cases/
+knowledge_base/solution_intro/
+
+# Skill workspace output — local generated files, not for version control
+skills/deepppt/scripts/projects/
+skills/deepppt/projects/
 
 # Icon library — 11000+ external SVG icons, install separately if needed
 skills/deepppt/templates/icons/
