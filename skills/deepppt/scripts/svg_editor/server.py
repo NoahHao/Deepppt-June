@@ -25,9 +25,12 @@ import logging
 import os
 import re
 import signal
+import socket
 import sys
 import threading
 import time
+import urllib.error
+import urllib.request
 import webbrowser
 import xml.etree.ElementTree as ET
 from pathlib import Path
@@ -154,6 +157,54 @@ def _release_lock(lock_file: Path) -> None:
         pass
 
 
+def _is_port_in_use(port: int, host: str = '127.0.0.1') -> bool:
+    """Return True if *host:port* is already bound by another process."""
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+        try:
+            s.bind((host, port))
+            return False
+        except OSError:
+            return True
+
+
+def _shutdown_existing_server(port: int, timeout: float = 3.0) -> bool:
+    """Attempt to gracefully shut down a preview server on *port*.
+
+    Sends a POST to ``/api/shutdown`` which is the standard self-termination
+    endpoint of this server.  Returns True if the request succeeded (the
+    remote server acknowledged shutdown), False otherwise.
+    """
+    try:
+        url = f'http://localhost:{port}/api/shutdown'
+        data = json.dumps({'reason': 'replaced_by_new_project'}).encode('utf-8')
+        req = urllib.request.Request(
+            url, data=data,
+            headers={'Content-Type': 'application/json'},
+            method='POST',
+        )
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            return resp.status == 200
+    except Exception:
+        return False
+
+
+def _find_lock_for_port(port: int, projects_root: Optional[Path] = None) -> Optional[Path]:
+    """Find a .live_preview.lock that references *port*.
+
+    Scans sibling project directories for lock files whose ``port`` field
+    matches.  Returns the lock file Path or None.
+    """
+    if projects_root is None:
+        return None
+    if not projects_root.is_dir():
+        return None
+    for lock_path in projects_root.glob(f'*/{LOCK_FILE_NAME}'):
+        data = _read_lock(lock_path)
+        if data and data.get('port') == port:
+            return lock_path
+    return None
+
+
 def _inline_icons(content: str) -> tuple[str, list[dict]]:
     """Replace <use data-icon="..."/> with rendered <g> for browser preview.
 
@@ -219,7 +270,6 @@ _MAX_EDIT_TEXT_LEN = 5000
 _ADDABLE_BATCH_ATTRS = frozenset({
     'fill', 'stroke', 'opacity',
     'font-size', 'font-family', 'font-weight', 'text-anchor',
-    'x', 'y',
 })
 
 
@@ -430,6 +480,8 @@ def create_app(
     def get_config():
         return jsonify({
             'live': app.config['LIVE_MODE'],
+            'project': project_path.name,
+            'project_path': str(project_path),
         })
 
     @app.route('/images/<path:filename>')
@@ -894,6 +946,57 @@ def main(argv: Optional[list[str]] = None) -> int:
     # /api/shutdown and idle timeout call _release_lock directly before
     # os._exit since atexit handlers do not run on os._exit.
     atexit.register(_release_lock, lock_file)
+
+    # ------------------------------------------------------------------
+    # Port-conflict resolution: when another preview server is still
+    # running on the same port (most commonly a previous project's
+    # server that was never shut down), the browser stays connected to
+    # the old process and shows stale SVGs.  Werkzeug's default
+    # SO_REUSEADDR on Windows even allows the new server to bind
+    # successfully, so the two processes silently coexist — with the
+    # browser hitting the *old* one most of the time.
+    #
+    # Strategy: detect → try graceful shutdown → clean up stale lock
+    # → wait for port to free → proceed.
+    # ------------------------------------------------------------------
+    if _is_port_in_use(args.port):
+        logger.info(
+            'Port %d is already in use — attempting to shut down the '
+            'existing preview server', args.port,
+        )
+        if _shutdown_existing_server(args.port):
+            logger.info('Shutdown request sent, waiting for port %d to free', args.port)
+            for _attempt in range(20):
+                time.sleep(0.5)
+                if not _is_port_in_use(args.port):
+                    logger.info('Port %d is now free', args.port)
+                    break
+            else:
+                logger.error(
+                    'Port %d still in use after shutdown request. '
+                    'Try a different port with --port.', args.port,
+                )
+                return 1
+        else:
+            # No responsive preview server on that port — it may be a
+            # non-preview service.  Try to find and clean up the lock
+            # file so at least the bookkeeping is consistent.
+            projects_root = project_path.parent
+            stale_lock = _find_lock_for_port(args.port, projects_root)
+            if stale_lock:
+                logger.warning(
+                    'Removing stale lock file %s (port %d)', stale_lock, args.port,
+                )
+                try:
+                    stale_lock.unlink(missing_ok=True)
+                except OSError:
+                    pass
+            logger.error(
+                'Port %d is occupied by a non-preview process. '
+                'Stop that process or use --port to specify a different port.',
+                args.port,
+            )
+            return 1
 
     # SIGTERM would otherwise terminate without running atexit, leaving a
     # stale lock that future launches have to recover from. Translate it

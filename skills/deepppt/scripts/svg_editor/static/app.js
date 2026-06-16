@@ -1533,6 +1533,10 @@
             .then(function (res) { return res.json(); })
             .then(function (data) {
                 liveMode = !!data.live;
+                var projectNameEl = document.getElementById("project-name");
+                if (projectNameEl && data.project) {
+                    projectNameEl.textContent = "— " + data.project;
+                }
             })
             .catch(function () {
                 liveMode = false;
