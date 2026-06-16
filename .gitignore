@@ -188,8 +188,9 @@ projects/*
 # Virtual environment (local only)
 .venv/
 
-# Knowledge base — local reference materials, not needed in repo
-knowledge_base/
+# Knowledge base — sync everything except .pptx files and images/
+knowledge_base/images/
+knowledge_base/**/*.pptx
 
 # Icon library — 11000+ external SVG icons, install separately if needed
 skills/deepppt/templates/icons/
