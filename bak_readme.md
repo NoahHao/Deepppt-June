@@ -65,7 +65,8 @@
     - speaker notes → 语音 python skills/ppt-master/scripts/notes_to_audio.py projects/my-deck
     - 自定义动画  python skills/ppt-master/scripts/pptx_animations.py projects/my-deck
 
-### 图片获取 
+### 图片获取  有没有图，是一个材料看起来好不看的重点！ 一定要有图
+![俺的图图呢](https://image.baidu.com/search/detail?adpicid=0&b_applid=8740755861428956482&bdtype=0&commodity=&copyright=&cs=2468954925%2C2910871000&di=7646086322926387201&fr=click-pic&fromurl=http%253A%252F%252Fwww.douban.com%252Fgroup%252Ftopic%252F215137746%252F%253Ftype%253Drec&gsm=1e&hd=&height=0&hot=&ic=&ie=utf-8&imgformat=&imgratio=&imgspn=0&is=0%2C0&isImgSet=&latest=&lid=&lm=&objurl=https%253A%252F%252Fgimg2.baidu.com%252Fimage_search%252Fsrc%253Dhttp%25253A%25252F%25252Fimg1.doubanio.com%25252Fview%25252Fgroup_topic%25252Fl%25252Fpublic%25252Fp412615628.jpg%2526refer%253Dhttp%25253A%25252F%25252Fimg1.doubanio.com%2526app%253D2002%2526size%253Df9999%252C10000%2526q%253Da80%2526n%253D0%2526g%253D0n%2526fmt%253Dauto%253Fsec%253D1784170855%2526t%253D830dbdc2014f2a03505a5f4b8eeeeebd&os=1089537453%2C702027103&pd=image_content&pi=0&pn=0&rn=1&simid=2468954925%2C2910871000&tn=baiduimagedetail&width=0&word=%E4%BF%BA%E7%9A%84%E5%9B%BE%E5%9B%BE%E5%91%A2%20%E7%89%9B%E7%88%B7%E7%88%B7&z=)
 非用户自带图片有两条路径，可在同一份 deck 里按行混用：
 
 需要 API 的功能统一通过 .env 配置。clone 安装可以用 cp .env.example .env；skill marketplace 安装建议使用持久的用户级配置：
@@ -74,8 +75,9 @@ mkdir -p ~/.deepppt
 cp /path/to/installed/deepppt/.env.example ~/.deepppt/.env
 PPT Master 会优先读取当前进程环境变量，然后按顺序读取第一个存在的 .env：当前工作目录、clone 仓库根目录、~/.deepppt/.env。
 
-A) AI 生图 — image_gen.py。设置 IMAGE_BACKEND 和对应 *_API_KEY（OPENAI_API_KEY、GEMINI_API_KEY 等），流程会自动调用。python3 skills/deepppt/scripts/image_gen.py --list-backends 查看完整后端清单。gpt-image-2 目前综合质量最佳。
-
-B) 网络图片搜索 — image_search.py。零配置可用，但高质量使用建议配置 PEXELS_API_KEY / PIXABAY_API_KEY（都免费申请）。不配置时只使用 Openverse / Wikimedia Commons，适合作为兜底，但容易出现普通用户上传、构图随意、清晰度不稳定的图片；配置后默认搜索链会追加 Pexels / Pixabay，现代商业摄影、人物、办公、生活方式和插画类图片质量会明显更稳定。默认以图片质量和匹配度优先，直接把 CC0、公有领域、Pexels / Pixabay 免署名许可、CC BY、CC BY-SA 一起纳入候选；如果选中的图片需要署名，Executor 会在该幻灯片自动添加小字署名。只有明确不能出现署名时，才使用 --strict-no-attribution 限制为免署名图片。对视觉要求高的封面、产品图、人物图和品牌场景，优先级建议是：用户自带高清素材 / AI 生图 > 配置 Pexels / Pixabay 的网络搜索 > 零配置网络搜索。
-
-完整说明：image-generator.md（AI）·image-searcher.md（网络）。
+A) AI 生图 
+    — image_gen.py。设置 IMAGE_BACKEND 和对应 *_API_KEY（OPENAI_API_KEY、GEMINI_API_KEY 等），流程会自动调用。python3 skills/deepppt/scripts/image_gen.py --list-backends 查看完整后端清单。gpt-image-2 目前综合质量最佳。
+    — svg_gen.py 这是一个兜底策略，使用文本大模型 生成一个base64的图，丑的不行，还不如没有，就是证明一下能生成插入廉价图片。
+B) 搜索 
+    网络搜索 — image_search.py。零配置可用，但高质量使用建议配置 PEXELS_API_KEY / PIXABAY_API_KEY（都免费申请）。不配置时只使用 Openverse / Wikimedia Commons，适合作为兜底，但容易出现普通用户上传、构图随意、清晰度不稳定的图片；配置后默认搜索链会追加 Pexels / Pixabay，现代商业摄影、人物、办公、生活方式和插画类图片质量会明显更稳定。默认以图片质量和匹配度优先，直接把 CC0、公有领域、Pexels / Pixabay 免署名许可、CC BY、CC BY-SA 一起纳入候选；如果选中的图片需要署名，Executor 会在该幻灯片自动添加小字署名。只有明确不能出现署名时，才使用 --strict-no-attribution 限制为免署名图片。对视觉要求高的封面、产品图、人物图和品牌场景，优先级建议是：用户自带高清素材 / AI 生图 > 配置 Pexels / Pixabay 的网络搜索 > 零配置网络搜索。完整说明：image-generator.md（AI）·image-searcher.md（网络）。
+    本地搜索，在知识库的构建过程中，存在一个 image_extract 的环节，把图片提取出来，进行index，其实是个过程中的功能，但是也没删掉（删了还浪费我的token，能跑就别动代码了）。 这部分也可以作为本地图片库进行补充， **但是要注意，只能处理 纯图片格式。 我的意思是，如果你需要pptx那种组合出来的图，要召回一页ppt** 
