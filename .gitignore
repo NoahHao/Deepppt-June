@@ -199,5 +199,8 @@ knowledge_base/solution_intro/
 skills/deepppt/scripts/projects/
 skills/deepppt/projects/
 
+# LLM Search vector store — runtime-generated metadata, not for version control
+skills/deepppt/scripts/LLM_Search/vector_store/*.json
+
 # Icon library — 11000+ external SVG icons, install separately if needed
 skills/deepppt/templates/icons/
