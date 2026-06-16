@@ -191,6 +191,8 @@ projects/*
 # Knowledge base — sync everything except .pptx files and images/
 knowledge_base/images/
 knowledge_base/**/*.pptx
+knowledge_base/product_intro/
+knowledge_base/customer_cases/
 
 # Icon library — 11000+ external SVG icons, install separately if needed
 skills/deepppt/templates/icons/
