@@ -66,7 +66,7 @@
     - 自定义动画  python skills/ppt-master/scripts/pptx_animations.py projects/my-deck
 
 ### 图片获取  有没有图，是一个材料看起来好不看的重点！ 一定要有图
-![俺的图图呢](https://image.baidu.com/search/detail?adpicid=0&b_applid=8740755861428956482&bdtype=0&commodity=&copyright=&cs=2468954925%2C2910871000&di=7646086322926387201&fr=click-pic&fromurl=http%253A%252F%252Fwww.douban.com%252Fgroup%252Ftopic%252F215137746%252F%253Ftype%253Drec&gsm=1e&hd=&height=0&hot=&ic=&ie=utf-8&imgformat=&imgratio=&imgspn=0&is=0%2C0&isImgSet=&latest=&lid=&lm=&objurl=https%253A%252F%252Fgimg2.baidu.com%252Fimage_search%252Fsrc%253Dhttp%25253A%25252F%25252Fimg1.doubanio.com%25252Fview%25252Fgroup_topic%25252Fl%25252Fpublic%25252Fp412615628.jpg%2526refer%253Dhttp%25253A%25252F%25252Fimg1.doubanio.com%2526app%253D2002%2526size%253Df9999%252C10000%2526q%253Da80%2526n%253D0%2526g%253D0n%2526fmt%253Dauto%253Fsec%253D1784170855%2526t%253D830dbdc2014f2a03505a5f4b8eeeeebd&os=1089537453%2C702027103&pd=image_content&pi=0&pn=0&rn=1&simid=2468954925%2C2910871000&tn=baiduimagedetail&width=0&word=%E4%BF%BA%E7%9A%84%E5%9B%BE%E5%9B%BE%E5%91%A2%20%E7%89%9B%E7%88%B7%E7%88%B7&z=)
+![俺的图图呢](https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg1.doubanio.com%2Fview%2Fgroup_topic%2Fl%2Fpublic%2Fp412615628.jpg&refer=http%3A%2F%2Fimg1.doubanio.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1784171168&t=e17d85e1a4637d932922ffc7a51cd025)
 非用户自带图片有两条路径，可在同一份 deck 里按行混用：
 
 需要 API 的功能统一通过 .env 配置。clone 安装可以用 cp .env.example .env；skill marketplace 安装建议使用持久的用户级配置：
